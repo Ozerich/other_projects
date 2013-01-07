@@ -1,0 +1,17 @@
+
+#content .items .item{
+	width: 175px;
+	margin: 0 0 15px 0;
+}
+
+.page-name{
+	padding-left: 15px;
+}
+
+#content .items{
+	padding: 10px 0 0 0;
+}
+
+.gray-block{
+	padding-top: 10px;
+}

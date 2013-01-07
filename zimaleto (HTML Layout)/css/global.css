@@ -1,0 +1,394 @@
+*{
+	font-family: Arial, Tahoma, sans-serif;
+	color: #666666;
+}
+
+body#winter {
+	background: #e4e9ee url('../images/body-winter_bg.jpg') no-repeat top center;	
+}
+
+body#summer {
+	background: #2d4461 url('../images/body-summer_bg.jpg') no-repeat top center;	
+}
+
+.clear{
+	clear: both;
+}
+
+#page{
+	width: 969px;
+	margin: 0 auto;
+	background: inherit;
+}
+
+
+#nav{
+	height: 71px;
+	margin: 0 auto;
+	background: url('../images/gor-menu.gif') no-repeat;
+}
+
+#nav ul{
+	padding-top: 12px;
+}
+
+#nav li{
+	display: block;
+	float: left;
+	text-align: center;
+}
+
+#nav li a{
+	font-size: 16px;
+	font-family: "Georgia";
+	color: #345c88;
+	text-decoration: none;
+}
+
+#nav li.about{width: 93px;}
+#nav li.service{width: 97px;}
+#nav li.photogallery{width: 142px;}
+#nav li.news{width: 108px;}
+#nav li.catalog{width: 103px;}
+#nav li.accomondation{width: 139px;}
+#nav li.cooperation{width: 170px;}
+#nav li.contacts{width: 117px;}
+
+#search
+{
+	float: right;
+	padding-top: 10px;
+	width: 250px;
+}
+
+.search-input{
+	float: left;
+	width: 194px;
+	border: none;
+	height: 25px;
+	padding-left: 7px;
+	color: #777777;
+	font-size: 11px;
+	display: block;
+	background: url('../images/search_bg-trans.png') no-repeat;
+
+}
+
+.search-submit{
+	background: url('../images/search-btn-trans.png') no-repeat;
+	float: left;
+	border: none;
+	height: 27px;
+	width: 42px;
+}
+
+#logo{
+	width: 250px;
+	height: 94px;
+	float: left;
+	margin-left: 32px;
+	background: url('../images/logo_bg-trans.png') no-repeat;
+
+}
+
+
+
+#logo .logo-text{
+	font-family: "Myriad Pro";
+	font-size: 24px;
+	font-weight: bold;
+	color: #555555;
+	padding-top: 14px;
+	display: block;
+	text-align: center;
+}
+
+#header{
+	margin: 0 auto;
+	height: 302px;
+	position: relative;
+}
+
+#current-path{
+	position: absolute;
+	right: 40px;
+	bottom: 10px;
+	font-size: 12px;
+}
+
+#current-path a{
+	color: #2e8ab8;
+	text-decoration: none;
+}
+
+#content{
+	background: #FFFFFF;	
+	margin: 0 auto;
+}
+
+#content .content-footer
+{
+	font-size:1px;
+	background: url('../images/line.jpg') no-repeat center top;
+	padding: 21px 21px 10px 21px;
+	margin-top: 30px;
+	clear: both;
+
+}
+
+#content .content-footer .footer-text a{
+	display: block;
+	float: left;
+	font-family: "Georgia", Tahoma, sans-serif;
+	font-size: 11px;
+	padding-top: 5px;
+	text-decoration: none;
+}
+
+#content .content-footer .switch{
+	display: block;
+	float: right;
+	background: url('../images/switch.jpg') no-repeat;
+	padding: 6px 11px;
+	font-size: 11px;
+	font-family: "Arial";
+	color: #4e7197;
+}
+
+#content .content-footer .switch a{
+	font-size: 11px;
+	font-family: "Arial";
+	color: #4e7197;
+	text-decoration: none;
+}
+
+#footer-wrapper{
+	width: 100%;
+	background: #a6c0dc;
+	height: 37px;
+	margin: 17px 0;
+}
+
+#footer{
+	color: #e4e9ee;
+	font-size: 11px;
+	font-family: "Arial";
+	padding: 14px 10px 0 0;
+	width: 971px;
+	margin: 0 auto;
+	padding-right: 10px;
+	text-align: right;
+}
+
+
+#popup{
+	background: url('../images/header.gif') no-repeat;
+	width: 186px;
+	height: 171px;
+	padding: 19px 17px;
+	position: absolute;
+	left: 300px;
+	top: 111px;
+}
+
+
+#popup li{
+	margin-bottom: 15px;
+}
+
+#popup a{
+	color: #517499;
+	font-size: 12px;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+#summer #popup{
+	display: none;
+}
+
+
+#content .items .item-image{
+	height: 110px;
+}
+
+#content .items img{
+	display:block;
+	margin:0 auto;
+}
+
+#content .items .item{
+	float: left;
+	margin-right: 35px;
+	width: 127px;
+}
+
+#content .items .item-last{
+	margin-right: 0;
+}
+
+#content .items .item .item-name
+{
+	font-size: 12px;
+	color: #4c587b;
+	display: block;
+	text-align: center;
+	font-family: "Georgia", Tahoma, sans-serif;
+	text-decoration: none;	
+}
+
+.blue-block-header{
+	background: url('../images/blue-block_header.jpg') no-repeat center top;
+	height: 9px;
+}
+
+
+.blue-block, .gray-block, .bluesmall-block, .yellow-block{
+	float: left;
+}
+
+.blue-block-content{
+	height: 170px;
+}
+
+
+.blue-block-footer{
+	background: url('../images/blue-block_footer.jpg') no-repeat center bottom;
+	height:9px;
+}
+
+.blue-block-content{
+	background: url('../images/blue-block_bg.jpg') repeat-y;
+}
+
+.blue-block-content, .gray-block-content{
+	padding: 10px 5px 0 10px;
+}
+
+.blue-block{
+	width: 541px;
+	
+}
+
+.gray-block{
+	width: 184px;
+}
+
+.gray-block-header{
+	background: url('../images/gray-block_header.jpg') no-repeat center top;
+	height: 28px;
+	padding: 10px 0 0 10px;
+	font-size: 14px;
+}
+
+.gray-block-footer{
+	background: url('../images/gray-block_footer.jpg') no-repeat center bottom;
+	height: 9px;
+}
+
+.gray-block-content{
+	background: url('../images/gray-block_bg.jpg') repeat-y;
+	font-size: 12px;
+}
+
+.gray-block-content{
+}
+
+.bluesmall-block-content{
+}
+
+.bluesmall-block{
+	width: 184px;
+}
+
+.bluesmall-block-header{
+	background: url('../images/bluesmall-block_header.jpg') no-repeat center top;
+	height: 17px;
+}
+
+.bluesmall-block-footer{
+	background: url('../images/bluesmall-block_footer.jpg') no-repeat center bottom;
+	height: 17px;
+}
+
+.bluesmall-block-content{
+	background: #eef9fe url('../images/bluesmall-block_bg.jpg') repeat-y;
+	font-size: 12px;
+}
+
+.bluesmall-block-content{
+	background: #e5f6fd url('../images/bluesmall-block_bg.jpg') repeat-y;
+	font-size: 12px;
+	padding: 10px;		
+}
+
+
+
+.yellow-block{
+	width: 184px;
+}
+
+.yellow-block-header{
+	background: url('../images/yellow-block_header.jpg') no-repeat center top;
+	height: 18px;
+}
+
+.yellow-block-footer{
+	background: url('../images/yellow-block_footer.jpg') no-repeat center bottom;
+	height: 16px;
+}
+
+.yellow-block-content{
+	background: #f1ecd7 url('../images/yellow-block_bg.jpg') no-repeat;
+	font-size: 12px;
+	padding: 10px;
+}
+
+
+
+#content .page-name{
+	color: #666666;
+	font-family: "Georgia";
+	font-size: 24px;
+	letter-spacing: 2px;
+}
+
+#summer #footer-content{
+	background: url('../images/summer-content_bg-trans.png') no-repeat center bottom #516880;
+	height: 17px;
+}
+
+
+#summer #footer-wrapper{
+	margin-top: 0;
+}
+
+#summer #footer-page{
+	background:#516880;
+	height: 32px;
+}
+
+#summer #content .content-footer{
+	padding-bottom: 0;
+}
+
+#left-blocks{
+	padding: 10px 0 0 26px;
+	width: 190px;
+	float: left;
+}
+
+#content-block{
+	padding: 17px 0 0 0;
+	float: left;
+	width: 556px;
+}
+
+#right-blocks{
+	width: 190px;
+	padding: 10px 0 0 0;
+	float: left;
+}
+
+
+

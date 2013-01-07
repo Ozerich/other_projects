@@ -1,0 +1,11 @@
+.nav{margin-bottom: 50px;}
+
+.weather-header .degree, .day-info .day-number .month-day, .day-forecast td.temperature .value{line-height: 34px;}
+.nav ul li a span, .nav ul li.active > div span{
+	padding-top: 1px;
+}
+.forecast td.day .wind .wind-direction{margin-top: 3px;}
+.day-info .time{padding-top: 10px; line-height: 1.6em;}
+.day-forecast td:hover > div{
+	margin-left: 0px;
+}

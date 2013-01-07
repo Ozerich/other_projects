@@ -1,0 +1,45 @@
+#content .content-header{
+	padding: 18px 10px 0 21px;	
+}
+
+#content .about{
+	clear: both;
+	padding: 45px 10px 0 21px;
+}
+
+
+#content .news{
+	background: url('../images/line.jpg') no-repeat center 35px;
+	padding: 45px 10px 0 21px;
+}
+
+#content .about-text{
+	display: block;
+	padding-top: 18px;
+	font-size: 12px;
+	line-height: 140%;
+}
+
+#content .block-header{
+	color: #666666;
+	font-size: 24px;
+	font-family: "Georgia";
+}
+
+#content .news-content{
+	padding-top: 10px;
+}
+
+
+#content .items{
+	padding: 25px 10px 0 21px;
+}
+
+
+.gray-block{
+	padding-left: 11px;
+}
+
+.page-name{
+	padding: 18px 0 0 21px;
+}

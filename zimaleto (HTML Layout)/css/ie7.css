@@ -1,0 +1,23 @@
+#content .items .item{
+	float: left;
+	margin-right: 17px;
+	width: 127px;
+}
+
+#content #content-block .items .item{
+	width: 185px;
+	margin: 0 0 15px 0;
+}
+
+#content .about{
+	padding-top: 21px;
+}
+.search-input{
+	padding-top:7px;
+}
+
+
+
+.search-input{
+	width: 193px;
+}

@@ -1,0 +1,301 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> <html xmlns="http://www.w3.org/1999/xhtml"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> <meta http-equiv="imagetoolbar" content="false" /> <meta name="robots" content="index, follow" /> <title>Я в Томске</title> <meta name="description" content="" /> <meta name="keywords" content="" /> 
+
+<link href="http://img.yavtomske.ru/styles/main/reset.css" rel="stylesheet" type="text/css" media="all" /> 
+<link href="http://img.yavtomske.ru/styles/main/styles.css" rel="stylesheet" type="text/css" media="all" /> 
+<!--[if lte IE 6]>
+
+<link href="http://img.yavtomske.ru/styles/main/ie6.css" rel="stylesheet" type="text/css" media="all" />
+<link href="styles/ie6.css" rel="stylesheet" type="text/css" media="all" />
+
+
+<![endif]--> <!--[if lte IE 7]><link href="http://img.yavtomske.ru/styles/main/ie7.css" rel="stylesheet" type="text/css" media="all" /><![endif]--> <!--[if lte IE 6]><script src="http://img.yavtomske.ru/js/min-width.js" type="text/javascript"></script><![endif]--> <!--[if lt IE 7]> <![if gte IE 5.5]> <script type="text/javascript" src="http://img.yavtomske.ru/js/fixpng.js"></script><style type="text/css"> .iePNG, IMG { filter:expression(fixPNG(this)); } .iePNG A { position: relative; } </style> <![endif]> <![endif]--> <script type="text/javascript" src="http://img.yavtomske.ru/js/jquery.js"></script> <script type="text/javascript" src="http://img.yavtomske.ru/js/jquery.form.js"></script> <script type="text/javascript" src="http://img.yavtomske.ru/js/jquery.jframe.js"></script> <script type="text/javascript" src="http://img.yavtomske.ru/js/script.js"></script> <script type="text/javascript" src="http://img.yavtomske.ru/js/cookie.js"></script> <script type="text/javascript" src="http://img.yavtomske.ru/js/tiny_mce/tiny_mce.js"></script> <script type="text/javascript" src="http://img.yavtomske.ru/js/tiny_mce/tiny_mce_init.js"></script> <script language="JavaScript">
+var passFocus = false;
+var loginFocus = false;
+
+</script> <link href="http://img.yavtomske.ru/styles/yadirect.css" rel="stylesheet" type="text/css" media="all" /> 
+<link href="styles/board.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="board.js"></script>
+</head> 
+
+<body> <div id="all-site"> <script type="text/javascript" src="http://img.yavtomske.ru/js/fp2_morda.js"></script> <div id="sys" class="clearfix"> <div class="startpage"> <a href="http://yavtomske.ru/help/2.xml" onClick="return setHomePage(this, false);"><img src="http://img.yavtomske.ru/images/ico/star.png" border="0" height="16" width="16">В избранное</a> <a href="http://yavtomske.ru/help/2.xml" onClick="return setHomePage(this, true);" ><img src="http://img.yavtomske.ru/images/ico/world.png" border="0" height="16" width="16">Сделать стартовой страницей</a> </div> <div class="login"> <nobr><a href="http://yavtomske.ru/register.xml"><img src="http://img.yavtomske.ru/images/ico/user_add.png" border="0" height="16" width="16">Зарегистрироваться</a></nobr> <nobr><a href="#" onClick="ClickLogin(); return false;" style="font-weight: bold;"><img src="http://img.yavtomske.ru/images/ico/lock.png" border="0" height="16" width="16">Войти</a></nobr> </div>     <a href="http://yavtomske.ru/help/"><img src="http://img.yavtomske.ru/images/ico/help.png" border="0" height="16" width="16">Помощь</a> </div> <div id="login-form"> <div id="loginform"> <div class="frame"> <form method="post" name="login" id="loginform" onsubmit="settime()"> <input type="hidden" name="event" value="login"> <input type="hidden" name="retpath" value="http://www.yavtomske.ru/"> <input type="hidden" name="timestamp" value="0"> <ul> <li> <div class="info"> <h2><font style="color:red;">Я</font> в Томске</h2> <p>Войти</p> </div> </li> <li> <label class="desc">Логин:</label> <div> <input id="login"  name="login"  class="field text full"  type="text"  tabindex="1" onfocus="loginFocus = true;"  onblur="loginFocus = false;" maxlength="255" value=""/> </div> </li><li> <label class="desc">Пароль:</label> <div> <input id="pass"  class="field text full" name="passwd" tabindex="2" type="password"  maxlength="255" onfocus="passFocus = true;"  onblur="passFocus = false;"  value="" />  </div> <div> <input  name="twoweeks"  id="a"  tabindex="3" value="yes"  class="checkbox" type="checkbox" > <label for="a" class="choice">запомнить меня</label> </div> </li>  <li class="buttons"> <span>  <button type="submit"  tabindex="4" name="ok" id="loginsubmit" class="positive "><img src="/images/ico/lock.png" alt="" /> Войти</button>  </span> <span>  <a href="#" onClick="hideLogin();" tabindex="5" name="cancel" class="negative "><img src="/images/ico/cross.png" alt="" /> Отменить</a>  </span> </li> <li> <div><a tabindex="6" href="/register.xml">Зарегистрироваться</a>&nbsp;&middot;&nbsp;<a tabindex="7" href="/remember/">Забыли пароль?</a></div> </li> </ul> </form> </div> </div>	</div> <script type="text/javascript">
+
+<!--
+var ca = 'reg';
+function newsReg(a, obj, id)
+{
+    if (ca == a) { return false; }
+    var dr = document.getElementById('reg-news');
+    if (dr)
+    {
+        document.getElementById('li-all').className = (a == 'all') ? 'selected' : '';
+        document.getElementById('li-reg').className = (a == 'reg') ? 'selected' : '';
+        var da = document.getElementById('all-news');
+        var t = da.innerHTML;
+        da.innerHTML = dr.innerHTML;
+        dr.innerHTML = t;
+        ca = a;
+    }
+    r(obj, 'stred/pid=14/cid='+id);
+    return false;
+}
+
+// -->
+
+</script> <div class="sidebar"></div> <div class="container"> <div class="content"> <div id="linkswrapper"> <ul class="icon"> <li id="love"><div><i></i><a href="http://znakomstva.yavtomske.ru" title="Знакомства">Знакомства</a></div></li> <li id="rielt"><div><i></i><a href="http://rielt.yavtomske.ru/" title="Действительно вся недвижимость Томска">Недвижимость</a></div></li> <li id="video"><div><i></i><a href="http://video.yavtomske.ru" title="Видео" >Видео</a></div></li> <li id="wf"><div><i></i><a href="http://web-format.net" target="_blank" title="Они делают хорошие сайты">Разработка&nbsp;сайтов</a></div></li> </ul> </div>    </div>   	 </div> <script type='text/javascript' src='http://img.yavtomske.ru/js/jquery.bgiframe.min.js'></script> <script type='text/javascript' src='http://img.yavtomske.ru/js/jquery.autocomplete.js'></script> <link rel="stylesheet" type="text/css" href="http://img.yavtomske.ru/js/jquery.autocomplete.css" /> <link rel="stylesheet" type="text/css" href="http://img.yavtomske.ru/js/thickbox.css" /> <style> #sformwrap {  position:relative; /*margin:0em auto;*/ overflow:hidden; clear:both; height:70px;	 } #sformbutton {position:absolute; top:0px; right:20px; float: left; width: 90px; /*	position:relative;*/ } #sformcontainer { width: 100%; float: left; margin-right: -115px;/* position:relative; left:0;*/ }	 #sforminput { margin-right: 110px; } #sforminput div.inputwrap{ width:100%; padding:10px 0px; margin:0;} </style> <div id="searchwrapper" class="clearfix"> <div class="sidebar"> <a href="/" class="logo"><img src="http://img.yavtomske.ru/images/logo.png" alt="Я в Томске" border="0" /></a> <p>объявления</p> </div><!-- logo --> <div class="container" class="clearfix"> <div class="content">     <form id="search-form" name="web" method="get" action="/search.xml" jframe='no' > <input type="hidden" name="stype" value=""> <input type="hidden" name="nl" value="0"> <input type="hidden" name="url" value=""> <div id="sformwrap" class="clearfix"> <div id="sformcontainer"> <div id="sforminput"> <div class="inputwrap"><input type="text" id="text" name="text" class="field text full ya_bg" value="" /></div> </div> </div> <div id="sformbutton" class="buttons"> <button type="submit" onClick="return search_type('www');">Найти</button> </div> <div style="position:absolute; right:90px; bottom:0; width: 100%;"> <span style="width:80px; margin-right:20px; float:right;"> <input   class="field radio"  checked  type="radio"  name="region"  value="tomsk"  onchange="setAction()" id="tomsk"> <label class="choice" style="line-height:.9em" for="tomsk">в Томске</label> </span> <span style="width:60px;  margin-right:20px; float:right;"> <input  class="field radio"  type="radio"  id="all"  name="region"  onchange="setAction()" value="all"> <label class="choice" style="line-height:.9em" for="all">везде</label> </span> </div>                 </div> </form> </div><!-- searchcontent --> </div><!-- mainsearch --> </div><!-- searchwrapper --> <script> query_text = ''; curr_page = ''; if (!(loginFocus || passFocus) && !query_text && curr_page != 'catalog') {  setTimeout(function(){ document.forms['web'].text.focus(); }, 10); } else { document.getElementById('text').blur(); } function setAction() { rg = document.forms['web'].region; len = document.forms['web'].region.length; i=0; while(i<len) { if(document.forms['web'].region[i].checked) break; i++; } switch(document.forms['web'].region[i].value) { case 'all': case 'tomsk': case 'url': document.forms['web'].action = '/search.xml'; break; case 'catalog': document.forms['web'].action = '/catalog/'; break; } } </script> <script type="text/javascript">
+$().ready(function() {
+	function formatItem(row) {
+		if(row[2]==1)
+		{
+			return "<div class=usr >"+ row[0] + "</div><div class=pgs>&nbsp;<small>страниц:&nbsp;</small>" + row[1] + "</div>";
+		}
+		else
+		{
+			return "<div class=itms >"+ row[0] + "</div><div class=pgs>&nbsp;<small>страниц:&nbsp;</small>" + row[1] + "</div>";
+		}
+	}
+	
+	function formatResult(row) {
+		return row[0].replace(/(<.+?>)/gi, '');
+	}
+	$("#text").autocomplete('/search.ac', {
+		matchContains: 1,
+		selectFirst: false,
+		autoFill: false,
+		multiple: false,
+		formatItem: formatItem,
+		formatResult: formatResult
+	});
+});
+
+</script> <script> setTimeout(function(){document.forms['web'].text.focus();}, 1); </script> 
+
+<div id="page">
+<div id="left-block">
+        <div id="my-board" class="board-block">
+        <div class="block-content">
+            <div class="header"><a href="#"><img src="images/add.png" alt="Добавить"/></a><span class="text">Мои объявления</span></div>
+			<div class="item">
+				<div class="item-name">
+					<a href="#" class="name">В Турцию от 12 т.р</a>
+					<a href="#"><img src="images/pencil.png" alt="Редактировать" /></a>
+					<a href="#" class="delete-button"><img src="images/bullet_delete.png" alt="Удалить" /></a><br style="clear:both"/>
+				</div>
+				<span class="dollar-text">12 000</span>
+				<span class="quote-text">30</span><span class="eye-text">75/23/2</span><br />
+				<span class="param-name">Создано:</span>
+				<span class="param-value">01 апреля 2011 16:34:09</span>
+				<span class="param-name">На сайте до:</span>
+				<span class="param-value">31 мая 2011 16:34:08</span><a href="#"><img src="images/green-arrow_up.png" alt=""/></a>
+				<span class="param-name">В спецразмещении до:</span>
+				<span class="param-value">31 мая 2011 16:34:08</span><a href="#"><img src="images/green-arrow_up.png" alt=""/></a>
+			</div>
+			<div class="item">
+				<div class="item-name">
+					<a href="#" class="name">Денежные займы очень быстро</a>
+					<a href="#"><img src="images/pencil.png" alt="Редактировать" /></a>
+					<a href="#" class="delete-button"><img src="images/bullet_delete.png" alt="Удалить" /></a><br style="clear:both"/>
+				</div>
+				<span class="dollar-text">12 000</span><span class="quote-text">30</span>
+				<span class="eye-text">4684/941/265</span><br />
+				<span class="param-name">Создано:</span>
+				<span class="param-value">01 апреля 2011 16:34:09</span>
+				<span class="param-name">На сайте до:</span>
+				<span class="param-value">31 мая 2011 16:34:08</span><a href="#"><img src="images/green-arrow_up.png" alt=""/></a>
+				<span class="param-name">В спецразмещении до:</span>
+				<span class="param-value">31 мая 2011 16:34:08</span><a href="#"><img src="images/green-arrow_up.png" alt=""/></a>
+			</div>
+        </div>
+        <div class="block-shadow"><div class="shadow-left"></div><div class="shadow-right"></div></div>
+            <div class="switch show-all">
+                <a href="#" class="show">показать все</a>
+                <a href="#" class="arrow-down"></a>
+            </div>
+            <div class="switch hide-all">
+                <a href="#" class="hide">спрятать</a>
+                <a href="#" class="arrow-up"></a>
+            </div>
+        </div>
+		
+		<div id="star-board" class="board-block">
+			<div class="block-content">
+            <div class="header">Избранные объявления</div>
+			<div class="item">
+				<div class="item-name">
+					<a href="#" class="name">В Турцию от 12 т.р</a>
+					<a href="#" class="delete-button"><img src="images/bullet_delete.png" alt="Удалить" /></a><br style="clear:both"/>
+				</div>
+				<span class="dollar-text">12 000</span>
+				<span class="quote-text">30</span><span class="eye-text">75</span><br />
+			</div>
+			<div class="item">
+				<div class="item-name">
+					<a href="#" class="name">Денежные займы очень быстро</a>
+					<a href="#" class="delete-button"><img src="images/bullet_delete.png" alt="Удалить" /></a><br style="clear:both"/>
+				</div>
+				<span class="dollar-text">12 000</span><span class="quote-text">30</span>
+				<span class="eye-text">4684</span><br />
+			</div>
+			<div class="item">
+				<div class="item-name">
+					<a href="#" class="name">iphone 3g 16гб</a>
+					<a href="#" class="delete-button"><img src="images/bullet_delete.png" alt="Удалить" /></a><br style="clear:both"/>
+				</div>
+				<span class="dollar-text">12 000</span><span class="quote-text">30</span>
+				<span class="eye-text">4684</span><br />
+			</div>
+            </div>
+        <div class="block-shadow"><div class="shadow-left"></div><div class="shadow-right "></div></div>
+            <div class="switch show-all">
+                <a href="#" class="show">показать все</a>
+                <a href="#" class="arrow-down"></a>
+            </div>
+            <div class="switch hide-all">
+                <a href="#" class="hide">спрятать</a>
+                <a href="#" class="arrow-up"></a>
+            </div>
+		</div>
+        
+		<div id="rubricator-board" class="board-block">
+            <div class="block-content">
+            <div class="header">
+				<a href="#"><img src="images/add.png" alt="Добавить"/></a>
+				<a href="#" class="text">Добавить объявление</a>
+				<br style="clear: both"/>
+			</div>
+			<div class="category">
+				<a href="#" class="name">Авто, мото</a>
+				<ul>
+					<li><a href="#">автозвук</a></li>
+					<li><a href="#">аксессуары</a></li>
+					<li><a href="#">аксессуары</a></li>
+					<li><a href="#">аксессуары</a></li>
+					<li><a href="#">грузовые</a></li>
+					<br style="clear: both"/>
+				</ul><br />
+				<a href="#" class="switch-show"><span>развернуть</span></a>
+				<a href="#" class="switch-hide"><span>свернуть</span></a>
+			</div>
+			<div class="category">
+				<a href="#" class="name">Аудио, видео, фото</a>
+				<ul>
+					<li><a href="#">MP3-плееры</a></li>
+					<li><a href="#">акустика</a></li>
+					<li><a href="#">видеокамеры</a></li>
+					<br style="clear: both"/>
+				</ul><br />
+				<a href="#" class="switch-show"><span>развернуть</span></a>
+				<a href="#" class="switch-hide"><span>свернуть</span></a>
+			</div>
+			<div class="category">
+				<a href="#" class="name">Бизнес</a>
+				<ul>
+					<li><a href="#">продам</a></li>
+					<li><a href="#">куплю</a></li>
+					<li class="last"><a href="#">ищу партнера</a></li>
+					<br style="clear: both"/>
+				</ul><br />
+				<a href="#" class="switch-show"><span>развернуть</span></a>
+				<a href="#" class="switch-hide"><span>свернуть</span></a>
+			</div>
+			<div class="category">
+				<a href="#" class="name">Бизнес</a>
+				<ul>
+					<li><a href="#">плиты</a></li>
+					<li><a href="#">холодильники</a></li>
+					<li><a href="#">пылесосы</a></li>
+					<br style="clear: both"/>
+				</ul><br />
+				<a href="#" class="switch-show"><span>развернуть</span></a>
+				<a href="#" class="switch-hide"><span>свернуть</span></a>
+			</div>
+		</div>
+         <div class="block-shadow"><div class="shadow-left"></div><div class="shadow-right "></div></div>
+        </div>	
+	</div>
+		<div id="add-content" class="content">
+		<span class="page-header">Добавить объявление</span>
+		<div class="add-form">
+		<form action="" method="post">
+			<p>
+				<label for="name">Название<span class="required">*</span></label>
+				<input type="text" size="50" name="name" />
+				<span class="more-text">Не более <span class="bold">20</span> символов. Сейчас <span class="bold">0</span> символов</span>
+			</p>
+			<p>
+				<label for="category">Категория<span class="required">*</span></label>
+				<select name="category">
+					<option>выберите</option>
+					<option>Категория 1</option>
+					<option>Категория 2</option>
+					<option>Категория 3</option>
+				</select>
+			</p>				
+			<p>
+				<label for="short_descr">Краткое описание</label>
+				<textarea name="short_descr" rows="2"></textarea>
+				<span class="more-text">Не более <span class="bold">50</span> символов. Сейчас <span class="bold">0</span> символов</span>
+			</p>
+			<p>
+				<label for="descr">Подробное описание</label>
+				<textarea rows="10" name="descr"></textarea>
+			</p>
+			<p>
+				<label for="contact">Контактная информация</label>
+				<textarea rows="2" name="contact"></textarea>
+			</p>
+			<p>
+				<label for="price">Цена<span class="required">*</span></label>
+				<input type="text" value="0" size="10" name="price" />
+				<span class="value-text">руб.</span>
+			</p>
+			<p>
+				<label for="name">Основное изображение <span class="required">*</span></label>
+				<input type="file" name="image" />
+				<span class="more-text">После того, как обяъвление будет сохранено, вы сможете добавить ещё 20 изображений</span>
+			</p>
+			<p class="checkbox">
+				<input type="checkbox" name="image" /><span class="text">Запретить пользователям добавлять комментарии к объявлению</span>
+				<span class="more-text">Вы, как владелец объявления, всегда сможете удалить любой комментарий</span>	
+			</p>
+			<p class="checkbox">
+				<input type="checkbox" checked name="image" /><span class="text">Высылать мне на e-mail уведомления о новых комментариях</span>
+				(blabla@gmail.com - <a href="#">изменить?</a> )
+			</p>
+			<p class="checkbox">
+				<input type="checkbox" checked name="image" /><span class="text">Высылать мне на e-mail уведомления о новых комментариях</span><br />
+				<input type="text" name="email" size="40" value="e-mail" /><span class="required">*</span>
+			</p>
+			<div class="captcha">
+				<div class="captcha-text">
+					<label for="name">Контрольные цифры<span class="required">*</span></label>
+					<input type="text" size="30" name="name" /><img src="images/arrow-captcha.png" alt="" />
+					<span class="more-text">Введите число, которое вы видите справа</span>
+				</div>
+				<div class="captcha-value">
+					<img src="images/antibot.php.gif" alt="" />
+					<span class="update-captcha"><a href="#">показать другие цифры</a></span>
+				</div>
+				<br class="clear" />
+			</div>
+			<p>
+				<label for="password">Пароль<span class="required">*</span></label>
+				<input type="text" size="50" name="password" />
+				<span class="more-text">Для того что бы в будущем вы могли: <span class="bold">изменить, удалить, продлить</span>
+				 срок размещения, <span class="bold">добавить в спецразмещение</span></span>
+			</p>
+			<p class="checkbox">
+				<input type="checkbox" name="licence_agree" /><span class="text">Я согласен с <a href="#">ЛИЦЕНЗИОННЫМ СОГЛАШЕНИЕМ</a></span>
+			</p>
+			<p class="submit">
+				<span class="submit-button"><input type="submit" value="Сохранить"/></span>
+				<span>По умолчанию, все объявления размещаются на срок 30 дней. Вы сможете продлить размещение
+или удалить объявление в любой момент.</p>
+			</p>
+		</form>
+		</div>
+	</div>
+</div>
+
+
+
+<div id="bottom"> <div class="botcorner"> <ul> <li>Написать <a href="mailto:yavtsk@web-format.net">письмо</a></li> <li><a href="http://yavtomske.ru/help/9.xml">вебмастеру</a></li> <li><a href="http://yavtomske.ru/help/11.xml">обмен баннерами</a></li> <li><a href="http://yavtomske.ru/stat/">запросы</a></li> </ul> </div> <div class="rightcorner" style="text-align:center;"> <a href="http://web-format.net"><img src="http://img.yavtomske.ru/images/wf_logo.gif"><br>разработка сайта</a>				</div> <div class="center" style="text-align:center;"> <p> <span style="margin:0;padding:0" id="tbec"><script src='http://tbe.tom.ru/?a=yavtomske.ru&js=1&c=6&s=8831&rnd=1302505797'></script></span> <noscript><a href="http://tbe.tom.ru"><img src="http://tbe.tom.ru/?a=yavtomske.ru&amp;c=6&amp;s=8831" alt="TBE" title="place hosts/hits users_online" style="border:0" /></a></noscript>&nbsp; <a href='http://catalog.tomtel.ru/' id="tomtelcounter">tc</a> <a href='http://catalog.tomtel.ru/' id="tomtelcounter2">tc2</a> <noscript><img alt='' style='border:0px' src='http://counter.tomtel.ru/counter.gif?id=5730'/></noscript> <!--LiveInternet counter--> <span id="liveinternetcounter">li</span> &nbsp;<!-- Catalog.Metka.Ru Counter Code Begin --> <a href="http://catalog.metka.ru/"><img src="http://catalog.metka.ru/counter/counter.php?id=1238733849&im=1&tp=3" border=0 alt="CATALOG.METKA.RU" width=88 height=31></a> <!-- Catalog.Metka.Ru Counter Code End --> </p><br> </div> </div>       </div> <!-- /all-site --> <net /></body> </html><!--0.012919-->

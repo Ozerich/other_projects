@@ -1,0 +1,134 @@
+#blocks-container
+{
+	float: right;
+	width: 300px;
+	margin-top: 13px;
+}
+
+
+
+#blocks-container #about-block #about-links{
+    padding: 10px 0 24px 15px;
+}
+
+#blocks-container #about-block #about-links a{
+
+    padding-right: 28px;
+}
+
+#order-container{
+	float: left;
+	width: 640px;
+	margin-top: 24px;
+}
+
+#page-path{
+	margin: 5px 10px 0 0;
+}
+
+#order-table{
+	clear: both;
+	width: 617px;
+	margin: 55px 0 0 15px;
+}
+#order-table table{
+	width: 100%;
+}
+
+#order-table th{
+	color: #c81f1c;
+	font-size: 13px;
+	padding-bottom: 14px;
+}
+
+#order-table th.name{
+	text-align: left;
+}
+
+#order-table th.count, #order-table th.price{
+	text-align: center;
+}
+
+#order-table thead{
+	border-bottom: 1px solid #c4c4c4;
+}
+
+
+#order-table td.name{
+	vertical-align: bottom;
+	padding: 15px 0;
+}
+
+#order-table td.name img{
+	float: left;	
+}
+
+#order-table td.name .item-name{
+	padding: 22px 0 12px 10px;
+	float: left;
+	font-size: 13px;
+	width: 242px;
+	display: block;
+}
+
+
+#order-table td.name .delete-link{
+	display: block;
+	color: #c10100;
+	text-decoration: none;
+	font-size: 11px;
+	padding-top: 10px;
+}
+
+
+
+#order-table td.price{
+	font-size: 14px;
+	font-weight: bold;
+	vertical-align: center;
+	text-align: center;
+	padding-top: 37px;
+	width: 75px;
+}
+
+#order-table td.count{
+	font-size: 14px;
+	font-weight: bold;
+	vertical-align: top;
+	padding-top: 36px;
+	text-align: center;
+}
+
+#order-table td.count input[type=text]{
+	border: 1px solid #444544;
+	width: 49px;
+	text-align: right;
+	color: #3a3c3b;
+	padding-right: 10px;
+}
+
+#content-bottom{
+	margin-top: 20px;
+	width: 100%;
+}
+
+#content-bottom a{
+	display: block;
+	color: #c10100;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+#content-bottom .left-link{
+	float: left;
+	padding-left: 38px;
+}
+
+#content-bottom .right-link{
+	float: right;
+	padding-right: 17px;
+}
+
+.list-block{
+	padding-bottom: 20px;
+}

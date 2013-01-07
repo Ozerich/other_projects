@@ -1,0 +1,79 @@
+#content-block{
+	padding-left: 20px;
+	width: 539px;
+}
+
+.item
+{
+	margin: 0 20px 30px 0;
+}
+
+.item .item-image{
+	float: left;
+	width: 192px;
+}
+
+.item .item-image img{
+	display: block;
+}
+
+.item .item-image .item-name{
+	font-color: #000000;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.item .item-params{
+	float: left;
+	padding-left: 15px;
+	width: 228px;
+}
+
+.item .item-params .param{
+	display: block;
+	padding-bottom: 5px;
+}
+
+.item .item-params .param-name{
+	font-color: #000000;
+	font-size: 12px;
+	font-weight: bold;	
+}
+
+.item .item-params .param-value{
+	font-size: 12px;
+}
+
+
+.item .item-buy{
+	float: left;
+	width: 81px;
+}
+
+.item .item-buy .ask-question{
+	color: #c58664;
+	font-size: 10px;
+	text-decoration: none;
+}
+
+.item .item-descr{
+	clear: both;
+	display: block;
+	padding-top: 24px;
+	font-size: 12px;
+}
+
+.item .buy-btn{
+	background: url('../images/buy.jpg') no-repeat center left;
+	font-size: 13px;
+	color: #ebe9ec;
+	display: block;
+	padding: 5px 8px 6px;
+	text-decoration: none;
+	text-transform:uppercase;
+}
+
+.gray-block{
+	padding-top: 10px;
+}
+

@@ -1,0 +1,33 @@
+#items{
+	display: inline;
+}
+
+#nav .link a.nav-link{
+	height: 43px;
+	line-height: 43px;
+}
+
+#comments{
+	padding: 0;
+}
+
+#item-header{
+	margin-top: -20px;
+}
+
+#item-content #description{
+	padding-top: 10px;
+}
+
+#content{
+	padding-left: 28px;
+}
+
+#blocks-wrapper{
+	background: url('../images/blocks_bg_r.jpg') repeat-x 140px 27px;
+}
+
+#content #items .item .header{
+	padding-bottom: 22px;
+}
+

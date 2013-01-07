@@ -1,0 +1,533 @@
+tr:hover{
+    background: none;
+}
+
+.clear{
+	clear: both;
+}
+
+#page{
+	padding-left: 27px;
+	margin-bottom: 25px;
+}
+
+th, td{
+	border: none;
+}
+
+#day-page{
+	width: 940px;
+	padding-left: 27px;
+	margin-bottom: 25px;
+}
+
+#main-banner{
+	margin-left: 224px;
+	width: 724px;
+	padding: 1px;
+	border: 1px solid #000000;
+}
+
+/* weather-header */
+
+.weather-header{
+	width: 100%;
+	margin-top: 10px;
+}
+.weather-header span, .weather-header img{
+	display: block;
+	float: left;
+}
+.weather-header .more-info{
+	font-size: 12px;
+	line-height: 1.1em;
+	padding: 11px 25px 0 0;
+}
+.weather-header .now{
+	font-size: 16px;
+	margin: 13px 17px 0 0;
+}
+.weather-header .degree{
+	font-size: 30px;
+	margin-top: 11px;
+	display: block;
+	line-height: 20px;
+}
+
+/* nav */
+.nav{
+	margin: 10px 0 20px 0;
+}
+
+
+.nav ul{
+	list-style:none;
+	display: block;
+	float: left;
+}
+
+.nav ul li a:hover, .nav ul li.active > div{
+	background: #4c98d8 url(../images/nav-left-active.png) no-repeat center left;
+}
+
+.nav ul li.active > div span{
+	display: block;
+	padding-top: 2px;
+	float: left;
+}
+
+.nav ul li a:hover .right-corner, .nav ul li.active .right-corner{
+	background: url(../images/nav-right-active.png) no-repeat center right;	
+}
+
+.nav ul li:hover span{
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.nav ul li{
+	display: block;
+	float: left;
+	height: 25px;
+	margin-right: 18px;
+}
+
+.nav ul li.day{width: 87px;}
+.nav ul li.days3{width: 173px;}
+.nav ul li.days10{width: 190px;}
+.nav ul li.graphs{width: 100px;}
+
+
+.nav ul li .right-corner{
+	background: url(../images/nav-right.png) no-repeat center right;
+	width: 12px;
+	float: right;	
+	height: 25px;
+}
+
+.nav ul li a, .nav ul li > div{
+	display: block;
+	color: #feffff;
+	font-size: 14px;
+	float: left;
+	padding-left: 12px;
+	font-weight: bold;
+	background: #185b9b url(../images/nav-left.png) no-repeat center left;
+}
+
+.nav ul li a span, .nav ul li.active > div span{
+	display: block;
+	float:left;
+	text-decoration:underline;
+	padding: 2px 6px 0 6px;
+
+}
+
+.nav ul li.active > div span{
+	text-decoration: none;
+}
+
+
+
+.nav .print{
+	background:  url(../images/printer.png) no-repeat center left;
+	padding-left: 25px;
+	margin: 2px 0 0 8px;
+	color: #000000;
+	display: block;
+	float: left;
+}
+
+
+/* forecast */
+
+.forecast-container{
+	padding-right: 27px;
+}
+
+.forecast{
+	width: 100%;
+    border: 0;
+}
+
+.forecast .week-header{
+	width: 100%;
+    border: 0;
+}
+
+.forecast .week-header .day{
+	color: #000000;
+}
+
+.forecast .week-header .day .week-name{
+	display: block;
+	font-size: 22px;
+}
+
+.forecast .week-header .day .day-number{
+	display: block;
+	font-size: 12px;
+}
+
+.forecast .week-header .weekend .week-name, .forecast .week-header .weekend .day-number{
+	color: #e31b00;
+}
+
+.forecast .week-forecast{
+	background: #4d99da url(../images/weather-gradient.png) repeat-x left top;
+	position:relative;
+}
+
+.forecast .week-forecast td{
+	vertical-align: top;
+}
+
+
+.forecast .week-forecast td:hover > div{
+	background: #4d99da url(../images/day-gradient-active.png) repeat-x;
+}
+.forecast .week-forecast td > div{
+	margin-right: 1px;
+	background: #175a99 url(../images/day-gradient.png) repeat-x;
+    text-align: center;
+}
+
+.forecast .week-forecast td:last-child > div{
+    margin-right: 0;
+}
+
+.forecast td, .forecast th{
+	border: 0;
+    padding: 0;
+}
+
+.forecast .week-forecast td.day span{
+    color: #ffffff;
+}
+
+.forecast td.spacer{
+	width: 11px;
+}
+
+.forecast td.day .night{
+    display: block;
+    background: #4d99da;
+	font-weight: bold;
+	
+}
+
+.forecast td.day .wind-speed{
+    display: block;
+    float: left;
+    padding-left: 4px;
+}
+
+.forecast td.day .temperature{
+    font-size: 30px;
+    display: block;
+    font-weight: bold;
+    padding: 15px 0;
+}
+
+.forecast td.day .wind{
+	width: 70px;
+	margin: 0 auto;
+}
+
+.forecast td.day .wind .wind-speed{
+    display: block;
+    float: left;
+    margin-top: 6px;
+}
+
+.forecast td.day .wind .wind-direction{
+    float: right;
+}
+
+.forecast td.day .wind .wind-direction img{
+    display: block;
+}
+
+.forecast td.day .pressure{
+    clear: both;
+}
+
+/* advertise and widgets*/
+
+.advertise{
+    width: 100%;
+	margin-top: 25px;
+}
+
+.advertise .item{
+	float: left;
+	width: 216px;
+	margin-right: 105px;
+}
+
+.advertise .item-left, .widgets .item-left{
+	width: 33%;
+	float: left;
+	text-align: left;
+}
+.advertise .item-center, .widgets .item-center{
+	width: 33%;
+	float: left;
+	text-align: center;
+}
+
+.advertise-right{
+	width: 288px;
+	float: left;
+}
+
+.advertise-right .item{
+	margin-bottom: 15px;
+}
+
+.widgets{
+	clear: both;
+}
+.widgets .item-center .item{
+	margin: 0 auto;
+}
+
+.widgets .item-right .item{
+	margin: 0 0 0 auto;
+}
+
+.advertise .item-right, .widgets .item-right{
+	width: 34%;
+	float: left;
+	text-align: right;
+}
+
+.widgets{
+    width: 100%;
+	margin-top: 70px;
+}
+
+.widgets .item{
+	width: 216px;
+	text-align: center;
+	margin-right: 105px;
+	float: left;
+}
+
+.widgets .item span{
+	font-size: 14px;
+	display: block;
+
+}
+.widgets .item a{
+	color: #185b9a;
+	font-size: 16px;
+	font-weight: bold;
+	display: block;
+	margin-top: 16px;
+}
+
+
+/* day-info */
+
+.forecast-week{
+	width: 613px;
+	float: left;
+	padding-right: 27px;
+}
+
+.forecast-week .day{
+	margin-bottom: 18px;
+	clear: both;
+}
+
+.day-info{
+	width: 78px;
+	float: left;
+	margin-right: 18px;
+	font-size: 12px;
+}
+
+.day-info.weekend .week-day, .day-info.weekend .month-day, .day-info.weekend .month, .day-info.weekend .today{
+	color: #e31b00;	
+}
+
+
+.day-info .today{
+	display: block;
+	line-height: 1em;
+}
+
+.day-info .week-day{
+	font-size: 18px;
+	float: left;
+}
+
+.day-info .day-number{
+	float: right;
+	margin: 11px 0 0 0;	
+}
+
+.day-info .day-number .month{
+	display: block;
+	padding-top: 6px;
+}
+
+.day-info .day-number  .month-day{
+	font-size: 46px;
+	display: block;
+}
+
+.day-info .time{
+	clear: both;
+	padding-top: 20px;
+}
+
+.day-info .time span{
+	display: block;
+}
+
+.day-info .moon{
+	text-align: center;
+	margin: 4px 0 0 14px;
+}
+
+
+/* day-forecast */
+
+.day-forecast{
+	width: 516px;
+	color: #ffffff;
+}
+
+.day-forecast td, .day-forecast th{
+	border-bottom: 1px solid #ffffff;
+	font-weight: normal;
+}
+
+.day-forecast th, .day-forecast th tr{
+	background: #4d99da;
+	border-right: 1px solid #1b5f9e;
+}
+
+.day-forecast tr{
+	background: url(../images/dayitem-line-gradient.png) repeat-x;
+	position: relative;
+}
+
+.day-forecast td{
+	height: 84px;
+	vertical-align: top;
+}
+
+.day-forecast td > div{
+	margin-right: 1px;
+	background: url(../images/dayitem-gradient.png) repeat-x;
+	height: 84px;
+}
+.day-forecast td:hover > div{
+	background: #4d99da url(../images/day-gradient-active.png) repeat-x;
+	margin-left: -1px;
+	margin-right: -1px;
+	padding: 0 1px;
+}
+
+.day-forecast td.temperature:hover > div, .day-forecast td.pressure:hover > div, .day-forecast td.humidity:hover > div
+{
+	padding: 0 1px 0 0;
+}
+
+.day-forecast td.wind:hover > div
+{
+	margin-right: 0;
+}
+
+.day-forecast td{
+	text-align: center;
+	vertical-align: top;
+}
+
+.day-forecast td.temperature{
+	width: 129px;
+	font-size: 14px;
+}
+
+.day-forecast td.temperature .value{
+	font-size: 28px;
+	display: block;
+	padding-top: 10px;
+}
+
+
+
+.day-forecast td.pic{
+	width: 90px;
+}
+
+.day-forecast td.pic img{
+	display: block;
+	padding-top: 9px;
+}
+
+.day-forecast td.pressure{
+	width: 100px;
+	font-size: 26px;
+}
+
+.day-forecast td.pressure span, .day-forecast td.humidity span, .day-forecast td.wind .value{
+	display: block;
+	padding-top: 25px;
+}
+
+.day-forecast td.humidity{
+	width: 96px;
+	font-size: 26px;
+}
+
+.day-forecast td.wind{
+	width: 104px;
+	font-size: 28px;
+}
+
+.day-forecast td.wind .value{
+	font-size: 28px;
+	float: left;
+	margin-left: 33px;
+}
+
+.day-forecast td.wind .value img.wind{
+	margin-left: 11px;
+}
+
+
+.day-forecast td.wind .value span{
+	display: block;
+	float: left;
+}
+
+.day-forecast td.wind .value img{
+	display: block;
+	float: left;
+}
+
+.day-forecast th.daylong{
+	font-size: 10px;
+}
+
+.day-forecast th.daylong span{
+	font-weight: bold;
+	font-size: 12px;
+}
+
+
+/* graphs */
+
+.graphs{
+	float: left;
+	padding-right: 27px;
+}
+
+.graphs .graph{
+	display: block;
+	margin-bottom: 30px;
+}

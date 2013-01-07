@@ -1,0 +1,180 @@
+.search-params
+{
+	position:absolute; 
+	right:90px; 
+	bottom:0; 
+	width: 100%;
+}
+
+.search-params select{
+	margin-left: 10px;
+}
+
+.search-params .week-block{
+	margin-right: 20px;
+	float: right;
+}
+
+.search-params .channel-block{
+	float: right;
+	margin-right: 13px;
+}
+
+.search-params .channel-block select{
+	width: 280px;
+	margin-left: 11px;
+}
+
+
+#main-banner{
+	margin: 10px 0 0 225px;
+	width: 724px;
+	padding: 1px;
+	border: 1px solid #000000;
+}
+
+
+.print-link{
+	background: url('../images/printer.png') no-repeat left center;
+	padding-left: 25px;
+	display: block;
+	float: right;
+	margin-right: 30px;
+}
+
+#banners{
+	width: 297px;
+	padding: 28px 0;
+	float: right;
+}
+
+#banners .banner{
+	margin: 0 auto;
+	display: block;
+	margin-top: 45px;
+}
+
+#program-wrapper{
+	width: 100%;
+}
+
+#content{
+	margin-right: 297px;
+}
+
+.weekdays .current{
+	float: left;
+	width: 88px;
+	margin-top: -21px;
+}
+
+.date{
+	font-size: 12px;
+	font-weight: bold;
+	margin-bottom: 4px;
+}
+
+.time{
+	display: block;
+	width: 110px;
+	margin-left: 31px;
+	float: left;
+	background: #53bdfb;
+	padding: 0 15px;
+	font-size: 14px;
+	color: #ffffff;
+}
+
+.time .now{
+	font-weight: bold;
+}
+
+.weekdays{
+	margin-left: 46px;
+	float: left;
+}
+
+.weekdays a{
+	color: #1a3dc1;
+	font-size: 14px;
+	display: block;
+	padding-right: 23px;
+	float: left;
+}
+
+.weekdays span.weekday{
+	color: #ffffff;
+	width: 62px;
+	background: #53bdfb;
+	text-align: center;
+	font-size: 14px;
+	font-weight: bold;
+	display: block;
+	float: left;
+	margin-top: 2px;
+}
+
+.program{
+	width: 100%;
+	margin-top: 53px;
+}
+
+.program .channel-item{
+	padding: 21px 0 25px 0;
+	border-bottom: 1px solid #d2cdd9;
+	clear: left;
+}
+
+.program .channel-name{
+	padding: 6px 0 0 24px;
+	width: 200px;
+	float: left;
+	height: 100%;
+}
+
+.program .channel-name img{
+	display: block;
+}
+
+
+.program .channel-name a{
+	color: #1a3dc1;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.program-item{
+	width: 100%;
+	display: block;
+	padding-bottom: 3px;
+	font-size: 12px;
+}
+
+.program-time{
+	display: block;
+	float: left;
+	padding-right: 10px;
+}
+
+.program-name{
+	display: block;
+	margin-left: 39px;
+}
+
+.channel-descr .current .program-name{
+	margin-left: 47px;
+}
+
+.channel-descr{
+	margin-left: 225px;
+}
+
+.channel-descr .current{
+	font-size: 14px;
+	font-weight: bold;
+}
+
+
+.channel-descr .last{
+	color: #787878;
+}

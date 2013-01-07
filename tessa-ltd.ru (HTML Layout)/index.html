@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+
+    <link href='http://fonts.googleapis.com/css?family=Jura:300,500&subset=cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/main.css" type="text/css" charset="utf-8"/>
+
+    <script src="js/jquery-1.8.2.min.js"></script>
+    <script src="js/jquery.history.js"></script>
+    <script src="js/jquery.roundabout2.js"></script>
+    <script src="js/jquery.roundabout-shapes2.js"></script>
+    <script src="js/main.js"></script>
+
+    <title>Tessa Layout</title>
+
+</head>
+
+<body>
+
+<div class="header-wr">
+    <div class="header">
+        <a href="#" class="slide" for="page_1"><img class="logo" src="img/logo.png"/></a>
+        <ul class="navigation">
+            <li><a class="slide" id="news_slide_button" url="news" for="page_3" href="#page_3">новости</a></li>
+            <li><a class="slide" id="about_slide_button" url="about" for="page_3" href="#page_3">о компании</a></li>
+            <li><a class="slide" for="page_4" href="#page_4">партнеры</a></li>
+            <li><a class="slide" for="page_5" href="#page_5">ответственность</a></li>
+            <li><a class="slide" for="page_6" href="#page_6">контакт</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="pages-wr">
+<div class="page" id="page_1" url="index">
+    <a class="slide resident-link" for="page_3" href="#page_3"></a>
+
+    <div class="content">
+        <h1>Мы перевезли более</h1>
+        <div class="counter">
+            <div class="pad">
+                <ul id="digit-5">
+                    <li><span>2</span></li>
+                    <li><span>3</span></li>
+                    <li><span>4</span></li>
+                    <li><span>5</span></li>
+                    <li><span>6</span></li>
+                    <li><span>7</span></li>
+                    <li><span>8</span></li>
+                    <li><span>9</span></li>
+                    <li><span>0</span></li>
+                    <li><span>1</span></li>
+                </ul>
+                <ul id="digit-4">
+                    <li><span>6</span></li>
+                    <li><span>7</span></li>
+                    <li><span>8</span></li>
+                    <li><span>9</span></li>
+                    <li><span>0</span></li>
+                    <li><span>1</span></li>
+                    <li><span>2</span></li>
+                    <li><span>3</span></li>
+                    <li><span>4</span></li>
+                    <li><span>5</span></li>
+                </ul>
+                <div class="spacer"></div>
+                <ul id="digit-3">
+                    <li><span>0</span></li>
+                    <li><span>1</span></li>
+                    <li><span>2</span></li>
+                    <li><span>3</span></li>
+                    <li><span>4</span></li>
+                    <li><span>5</span></li>
+                    <li><span>6</span></li>
+                    <li><span>7</span></li>
+                    <li><span>8</span></li>
+                    <li><span>9</span></li>
+                </ul>
+                <ul id="digit-2">
+                    <li><span>0</span></li>
+                    <li><span>1</span></li>
+                    <li><span>2</span></li>
+                    <li><span>3</span></li>
+                    <li><span>4</span></li>
+                    <li><span>5</span></li>
+                    <li><span>6</span></li>
+                    <li><span>7</span></li>
+                    <li><span>8</span></li>
+                    <li><span>9</span></li>
+                </ul>
+                <ul id="digit-1">
+                    <li><span>0</span></li>
+                    <li><span>1</span></li>
+                    <li><span>2</span></li>
+                    <li><span>3</span></li>
+                    <li><span>4</span></li>
+                    <li><span>5</span></li>
+                    <li><span>6</span></li>
+                    <li><span>7</span></li>
+                    <li><span>8</span></li>
+                    <li><span>9</span></li>
+                </ul>
+                <ul id="digit-0">
+                    <li><span>0</span></li>
+                    <li><span>1</span></li>
+                    <li><span>2</span></li>
+                    <li><span>3</span></li>
+                    <li><span>4</span></li>
+                    <li><span>5</span></li>
+                    <li><span>6</span></li>
+                    <li><span>7</span></li>
+                    <li><span>8</span></li>
+                    <li><span>9</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <h2>автомобилей</h2>
+
+        <p>Основной услугой ООО "ТЕССА" является перевозка в железнодорожных вагонах легковых автомобилей</p>
+
+        <br clear="all"/>
+
+        <div class="buttons">
+            <a href="#" for="page_2" class="slide yellow-button">Подробнее</a>
+            <a href="#" for="page_6" class="slide blue-arrow-button">Связаться</a>
+        </div>
+    </div>
+
+    <div id="car_slides" class="car-image">
+        <img style="display: block" id="kia_slide" src="img/kia_car.png"/>
+        <img style="display: none" id="chevrolet_slide" src="img/chevrolet_car.png"/>
+        <img style="display: none" id="bmw_slide" src="img/bwm_car.png"/>
+        <img style="display: none" id="opel_slide" src="img/opel_car.png"/>
+    </div>
+
+</div>
+
+<div class="page" id="page_2" url="news">
+    <h1 class="page-header">Мы перевозим бережно и нежно</h1>
+
+    <div id="logos_block" class="logos-block">
+        <img id="bmw_logo" src="img/bmw_logo.png"/>
+        <img id="kia_logo" src="img/kia_logo.png"/>
+        <img id="opel_logo" src="img/opel_logo.png"/>
+        <img id="chevrolet_logo" src="img/chevrolet_logo.png"/>
+    </div>
+    <p class="content">Уникальность компании ТЭССА в ее узкой специализации. Компания создана для обеспечения
+        максимально быстрой и качественной доставки автомобилей произведенных компанией АВТОТОР из Калининграда на
+        терминалы в России.<br/>
+        Компания АВТОТОР осуществляет производство и локализацию автомобилей на российском рынке для автоконцернов
+        BMW, General Motors и KIA.<br/>
+        Офис компании ТЭССА находится в Калининграде, компания ТЭССА является резидентом особой экономической
+        зоны.</p>
+</div>
+
+<div class="page" id="page_3" url="about">
+    <h1 class="page-header">О компании TESSA</h1>
+
+    <div class="news-page-wr" style="display: block;">
+        <div class="content-block">
+
+            <a href="#" class="arrow-left" id="about_left"></a>
+            <a href="#" class="arrow-right" id="about_right"></a>
+
+
+            <div class="article" id="about_history" style="display:block;">
+
+                <img class="article-image" src="img/news_image.jpg"/>
+
+                <h2 class="article-header">История</h2>
+
+                <div class="article-content">Компания ТЭССА - совместное предприятие ГК «Автотор» и ГК «Аппарель».
+                    Компания
+                    была создана в 2010 году на территории особой экономической зоны для обеспечения железнодорожных
+                    перевозок продукции» ГК «Автотор» из Калининграда на терминалы в России. ГК «Автотор» осуществляет
+                    производство и локализацию на российском рынке автомобилей под марками BMW, KIA, Chevrolet, Opel и
+                    Cadillac. Высокий уровень ответственности компании ТЭССА выражается в ежечасном соблюдении всех
+                    необходимых стандартов и требований, чтобы каждый новый автомобиль был доставлен покупателю в
+                    идеальном
+                    состоянии, в таком же виде, в котором автомобиль покидает сборочный конвейер.
+                </div>
+            </div>
+
+            <div class="article" id="about_terminals" style="display: none">
+
+                <h2 class="article-header">Терминалы</h2>
+
+                <div class="article-content">Терминалы
+                </div>
+
+            </div>
+
+            <div class="article" id="about_phylosophy" style="display: none">
+
+                <h2 class="article-header">Философия</h2>
+
+                <div class="article-content">Философия
+                </div>
+
+            </div>
+
+            <div class="article" id="about_advantage" style="display: none">
+                <h2 class="article-header">Преимущество</h2>
+
+                <div class="article-content">Преимущество
+                </div>
+
+            </div>
+
+
+            <div class="article news-block" id="about_news" style="display: none">
+                <h2 class="article-header">Новости</h2>
+
+                <div class="article-content">
+                    <ul class="news-list">
+                        <li><span class="date">26.09.2012</span><span class="delimetr">&raquo</span><a href="#"
+                                                                                                       for="news_1">Новость
+                            1</a></li>
+                        <li><span class="date">26.09.2012</span><span class="delimetr">&raquo</span><a href="#"
+                                                                                                       for="news_2">Новость
+                            2</a></li>
+                        <li><span class="date">26.09.2012</span><span class="delimetr">&raquo</span><a href="#"
+                                                                                                       for="news_3">Новость
+                            3</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="navigation-block">
+
+            <ul id="about_navigation">
+                <li><a href="#" class="page-link active" for="history">История</a></li>
+                <li><a href="#" class="page-link" for="terminals">Наши терминалы</a></li>
+                <li><a href="#" class="page-link" for="phylosophy">Философия</a></li>
+                <li><a href="#" class="page-link" for="advantage">Преимущество</a></li>
+            </ul>
+
+            <a href="#" class="blue-button page-link" for="news" id="news_open">Новости</a>
+        </div>
+
+    </div>
+
+
+    <div id="news_popup" style="display:none"><a href="#" id="close_news_popup"></a>
+
+        <div class="news" id="news_1" style="display: block">
+            <a href="#" class="close-news"></a>
+
+            <h2 class="news-header">Новость 1</h2>
+            <span class="news-date">26.09.2012</span>
+
+            <div class="news-content-wr">
+                <p class="news-content">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor
+                    aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis
+                    sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan
+                    ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat
+                    consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                    inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a
+                    augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra,
+                    erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse
+                    in orci enim.This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor
+                    aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis
+                    sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan
+                    ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat
+                    consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                    inceptos </p>
+                <img class="news-image" src="img/news_image.jpg"/>
+            </div>
+        </div>
+
+        <div class="news" id="news_2" style="display: none">
+            <a href="#" class="close-news"></a>
+
+            <h2 class="news-header">Новость 2</h2>
+            <span class="news-date">26.09.2012</span>
+
+            <div class="news-content-wr">
+                <p class="news-content">Content</p>
+                <img class="news-image" src="#"/>
+            </div>
+        </div>
+
+        <div class="news" id="news_3" style="display: none">
+            <a href="#" class="close-news"></a>
+
+            <h2 class="news-header">Новость 3</h2>
+            <span class="news-date">26.09.2012</span>
+
+            <div class="news-content-wr">
+                <p class="news-content">Content</p>
+                <img class="news-image" src="#"/>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+<div class="page" id="page_4" url="partners">
+    <h1 class="page-header">Наши партнеры</h1>
+
+    <div id="partners" class="partners">
+        <div class="first-line">
+            <a class="partner active" for="partner_1" href="#"><img src="img/partner_logo_1.jpg"/></a>
+            <a class="partner" for="partner_2" href="#"><img src="img/partner_logo_1.jpg"/></a>
+            <a class="partner" for="partner_3" href="#"><img src="img/partner_logo_1.jpg"/></a>
+            <a class="partner" for="partner_4" href="#"><img src="img/partner_logo_1.jpg"/></a>
+            <br clear="all"/>
+        </div>
+        <div class="second-line">
+            <a class="partner" for="partner_5" href="#"><img src="img/partner_logo_1.jpg"/></a>
+            <a class="partner" for="partner_6" href="#"><img src="img/partner_logo_1.jpg"/></a>
+            <a class="partner" for="partner_7" href="#"><img src="img/partner_logo_1.jpg"/></a>
+            <a class="partner" for="partner_8" href="#"><img src="img/partner_logo_1.jpg"/></a>
+            <a class="partner" for="partner_9" href="#"><img src="img/partner_logo_1.jpg"/></a>
+            <br clear="all"/>
+        </div>
+    </div>
+
+    <div class="content-block">
+        <div class="partner-content" id="partner_1">
+            <h2 class="partner-header">Автотор</h2>
+
+            <p class="partner-description">Компания АВТОТОР - один из крупнейших автопроизводителей в России
+                осуществляет
+                производство и локализацию автомобилей на российском рынке для автоконцернов BMW, General Motors и
+                KIA.</p>
+        </div>
+
+        <div class="partner-content" id="partner_2" style="display: none">
+            <h2 class="partner-header">Партнер 2</h2>
+
+            <p class="partner-description"></p>
+        </div>
+        <div class="partner-content" id="partner_3" style="display: none">
+            <h2 class="partner-header">Партнер 3</h2>
+
+            <p class="partner-description"></p>
+        </div>
+        <div class="partner-content" id="partner_4" style="display: none">
+            <h2 class="partner-header">Партнер 4</h2>
+
+            <p class="partner-description"></p>
+        </div>
+        <div class="partner-content" id="partner_5" style="display: none">
+            <h2 class="partner-header">Партнер 5</h2>
+
+            <p class="partner-description"></p>
+        </div>
+        <div class="partner-content" id="partner_6" style="display: none">
+            <h2 class="partner-header">Партнер 6</h2>
+
+            <p class="partner-description"></p>
+        </div>
+        <div class="partner-content" id="partner_7" style="display: none">
+            <h2 class="partner-header">Партнер 7</h2>
+
+            <p class="partner-description"></p>
+        </div>
+        <div class="partner-content" id="partner_8" style="display: none">
+            <h2 class="partner-header">Партнер 8</h2>
+
+            <p class="partner-description"></p>
+        </div>
+        <div class="partner-content" id="partner_9" style="display: none">
+            <h2 class="partner-header">Партнер 9</h2>
+
+            <p class="partner-description"></p>
+        </div>
+    </div>
+
+
+    <a href="#" id="partners_left" class="arrow-left"></a>
+    <a href="#" id="partners_right" class="arrow-right"></a>
+</div>
+
+
+<div class="page" id="page_5" url="charge">
+    <h1 class="page-header">Ответственность</h1>
+
+    <div class="content-block">
+        <h2 class="content-header">БЫСТРО, НАДЕЖНО, ПРОФЕССИОНАЛЬНО</h2>
+
+        <p class="content">Высокий уровень ответственности компании ТЭССА выражается в ежечасном
+            соблюдении всех необходимых стандартов и требований, чтобы каждый новый автомобиль был доставлен
+            покупателю
+            в идеальном состоянии, в таком же виде, в котором автомобиль покидает сборочный конвейер.
+        </p>
+    </div>
+
+    <ul class="pluses-list">
+        <li>Максимальная скорость доставки</li>
+        <li>Бережное отношение к автомобилям</li>
+        <li>Узкая специализация</li>
+    </ul>
+</div>
+
+<div class="page" id="page_6" url="contact">
+
+    <h1 class="page-header">Связаться с Tessa</h1>
+
+    <div class="content-block">
+        <div class="address">
+            <p>TESSA</p>
+
+            <p>236006 Калининград,<br/>
+                ул. Октябрьская д. 4.,<br/>
+                офис № 314</p>
+
+            <p>
+                Телефон: +7 (4012) 30-71-71<br/>
+                Факс: +7 (4012) 30-71-74<br/>
+                Email: tessa@tessa-ltd.ru
+            </p>
+        </div>
+
+        <a href="#" class="blue-arrow-button">На карте</a>
+        <a href="#" class="yellow-button">Отправить еmail</a>
+    </div>
+
+    <div class="map">
+
+    </div>
+
+    <a href="#" class="arrow-right"></a>
+</div>
+</div>
+
+<div class="footer-wr">
+    <div class="footer">
+        <p>236006 Калининград, ул. Октябрьская д. 4., офис № 314</p>
+
+        <p>Телефон: +7 (4012) 30-71-71 Факс: +7 (4012) 30-71-74 Email: tessa@tessa-ltd.ru</p>
+    </div>
+</div>
+
+</body>
+
+</html>

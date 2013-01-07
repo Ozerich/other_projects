@@ -1,0 +1,284 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />	
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="css/global.css" />
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+<!--[if lt IE 7]>
+<script src="js/IE7.js"></script>
+
+<![endif]-->
+
+<!--[if  IE 6]>
+<link rel="stylesheet" type="text/css" href="css/ie6.css" />
+<![endif]-->
+	<title>Официальный магазин JAMO в России</title>
+</head>
+
+<body>
+	<div id="top-wrapper">
+		<div id="header-wrapper">
+           
+            <div id="header"> <div id="header-left"></div>
+				<div id="logo">
+					<a href="#">
+				    	<img src="images/logo.png" alt="Официальный магазин JAMO в России"/>
+					</a>
+						<p>Официальный магазин Jamo в России</p>
+				</div>
+				
+				<div id="contacts">
+					<div id="phone-container">
+						<span class="caption">Телефон в Москве</span>
+						<span class="value">8 495 265 58 78</span>
+					</div> 
+					<div id="hotlink-container">
+						<span class="caption">Горячая линия</span>
+						<span class="value">8 800 067 966 07 24</span>
+					</div>    
+					<div id="contacts-menu">
+						<a href="#" class="header">Оплата</a>
+				    	<a href="#" class="header">Доставка и самовывоз</a>
+				    	<a href="#" class="header">Контакты</a>
+					</div>
+				</div>
+				
+				<div id="cart">
+					<span id="basket">Корзина</span>
+					<span id="instock"><span id="count">7</span> товаров на сумму <span id="price">50 000 р.</span></span>
+					<a href="#" id="buy">Оформить покупку</a>	
+				</div>
+
+				<div id="nav">
+				    <table>
+				        <tr>
+				            <td class="link"><div><a class="nav-link" href="#">Акустические системы</a>
+                            <div class="submenu">
+                                <ul>
+                                    <li><a href="#">Системы Multi-Room</a></li>
+                                    <li><a href="#">Системы акустических систем</a></li>
+                                    <li><a href="#">Регуляторы громкости</a></li>
+                                    <li class="last"><a href="#">�?нфракрасные модули</a></li>
+                                </ul>
+                            </div>
+                            </div>
+                            </td>
+				            <td class="link"><div><a class="nav-link" href="#">Электроника</a>
+                            <div class="submenu">
+                                <ul>
+                                    <li><a href="#">Системы Multi-Room</a></li>
+                                    <li><a href="#">Системы акустических систем</a></li>
+                                    <li><a href="#">Регуляторы громкости</a></li>
+                                    <li class="last"><a href="#">�?нфракрасные модули</a></li>
+                                </ul>
+                            </div></div></td>
+				            <td class="link"><div><a class="nav-link" href="#">Системы управления</a></div></td>
+				            <td class="link"><div><a class="nav-link" href="#">Аксессуары</a></div></td>
+				            <td class="link"><div><a class="nav-link" href="#">Серия Aesthetic</a></div></td>
+				            <td class="link"><div><a class="nav-link" href="#">Встраиваемые АС</a></div></td>
+				        </tr>
+				    </table>
+				</div>
+			</div>
+		</div>	
+	</div>
+
+    <div id="content-wrapper">
+	<div id="content">
+		<div id="items-wrapper">
+			<div id="mainpic">
+				<img src="images/mainpic.jpg" alt="" />
+			</div>
+			<div id="items">
+				<div class="arrow">
+					<a href="#"><img src="images/arrow_left.jpg" alt="Предыдущее" /></a>
+				</div>
+				<div class="item">
+					<div class="header">
+						<div class="name">660A2 2-Way</div>
+						<div class="price">5 999 р.</div>
+					</div>
+					<img src="images/item1.jpg" alt="" />
+					<span class="descr">Домашний кинотеатр и удивительно чистое звучание музыки, динамичные звуковые эффекты - это так просто.</span>
+				</div>
+				<div class="item">
+					<div class="header">
+						<div class="name">660A214 2-Way</div>
+						<div class="price">532 999 р.</div>
+					</div>
+					<img src="images/item2.jpg" alt="" />
+					<span class="descr">Встроенная акустика для системы «мультирум» и домашнего кинотеатра. Вы можете установить акустическую систему на виду или сделать ее невидимой.</span>
+				</div>
+				<div class="item">
+					<div class="header">
+						<div class="name">660A2 2-Way</div>
+						<div class="price">5 999 р.</div>
+					</div>
+					<img src="images/item3.jpg" alt="" />
+					<span class="descr">Лучшая европейская High End акустика R 909 не только способна воссоздать атмосферу совершенного домашнего кинотеатра, – это -  идеальный партнер для самых </span>
+				</div>
+				<div class="arrow">
+					<a href="#"><img src="images/arrow_right.jpg" alt="Следующее" /></a>
+				</div>
+			</div>
+		</div>
+	</div>
+    </div>
+	
+
+	<div id="blocks-wrapper">
+
+	<div id="blocks-container">
+        <div id="blocks-left"></div>
+					<div class="blocks">   
+			<div id="news-block" class="block">
+				<div class="block-header">
+					<img src="images/column1.jpg" alt="" />
+					<h2 class="header">Новости</h2>	
+					<a href="#">Все новости</a>
+				</div>
+                <ul id="news">
+                    <li>
+                        <span class="date">
+                            03.10.2010
+                        </span>
+                        <span class="news-header">
+                            Разработан концепт дизайна сайта магазина для Jamo
+                        </span>
+                    </li>
+                    <li>
+                        <span class="date">
+                            03.10.2010
+                        </span>
+                        <span class="news-header">
+                            Разработан концепт дизайна сайта магазина для Jamo
+                        </span>
+                    </li>
+                    <li>
+                        <span class="date">
+                            03.10.2010
+                        </span>
+                        <span class="news-header news-header-last">
+                            Разработан концепт дизайна сайта магазина для Jamo
+                        </span>
+                    </li>
+                </ul>
+			</div> 
+  
+			<div id="customer-block" class="block list-block">
+				<div class="block-header">
+					<img src="images/column2.jpg" alt="" />
+					<h2 class="header">Покупателю</h2>					
+				</div>
+                <div id="block-content">
+                    <div class="block-item"><a href="#">Какую серию выбрать(статьи)</a></div>
+                    <div class="block-item"><a href="#">Гарантийное и серверное обслуживание продукции Jamo(текст)</a></div>
+                    <div class="block-item"><a href="#"><b>Официальный форум Jamo</b></a></div>
+                </div>
+			</div>
+
+				<div id="about-block" class="block">
+				<div class="block-header">
+					<img src="images/column3.jpg" alt="" />
+					<h2 class="header">О магазине</h2>	
+					<a href="#">Читать полностью</a>				
+				</div>
+                <div class="about-content">
+                    <p class="about-text">Природная склонность датчан к архитектуре, строительству и исскуству векаи проявлялось во всем, что они создвали - от ветряных мельниц и мостов до мебельных шедевров и зданий оперных театров</p>
+                    <div id="timetable">
+                        <span class="we-work">Мы работаем:</span>
+                        <span class="days">Пн/Пт</span> <span class="time">9:00 по 18:00</span>
+                        <span class="days">Сб/Вс</span> <span class="time">10:00 по 15:00</span>
+                    </div>
+                    <div id="about-links">
+                        <a href="#">Оплата</a>
+                        <a href="#">Доставка и самовывоз</a>
+                        <a href="#" class="last">Контакты</a>
+                    </div>
+                </div>		
+			</div><br class="clear" />
+			</div>
+			 <div id="blocks-right"></div>
+			 
+		</div>
+	</div>
+	
+	<div class="clear"></div>
+	
+	<div id="bottom-menu-wrapper">
+		<div id="bottom-menu">
+			<div class="menu">
+				<h3>Серия акустики</h3>
+				<ul>
+					<li><a href="#">Акустические системы</a></li>
+					<li><a href="#">Электроника</a></li>
+					<li><a href="#">Системы управления</a></li>
+					<li><a href="#">Аксессуары</a></li>
+					<li><a href="#">Серия Reference</a></li>
+					<li><a href="#">Серия Aesthetic</a></li>
+					<li><a href="#">Серия Concert</a></li>
+					<li><a href="#">Серия Studio</a></li>
+					<li><a href="#">Серия PJ</a></li>
+					<li><a href="#">Серия i</a></li>
+					<li><a href="#">Встраиваемые АС</a></li>
+				</ul>
+			</div>
+			<div class="menu">
+				<h3>Типы акустики</h3>
+				<ul>
+					<li><a href="#">Foloor Speaker</a></li>
+					<li><a href="#">Bookhelf Speaker</a></li>
+					<li><a href="#">Wall Mounted Speaker</a></li>
+					<li><a href="#">Center Speaker</a></li>
+					<li><a href="#">Surrounded Speaker</a></li>
+					<li><a href="#">Soowoofer</a></li>
+					<li><a href="#">Installation Speaker</a></li>
+					<li><a href="#">Outdor Speaker</a></li>
+					<li><a href="#">Home Cinema Sisems</a></li>
+					<li><a href="#">Electronics</a></li>
+				</ul>
+			</div>
+			<div class="menu">
+				<h3>Линии акустики</h3>
+				<ul>
+					<li><a href="#">Amplifier</a></li>
+				</ul>
+			</div>
+			<div class="menu">
+				<h3>Акустические системы</h3>
+				<ul>
+					<li><a href="#">Home Cinema Sistem</a></li>
+					<li><a href="#">Jamo Link</a></li>
+				</ul>
+			</div>	
+			<div class="menu">
+				<h3>Custom Installation</h3>
+				<ul>
+					<li><a href="#">Jamo Link</a></li>
+					<li><a href="#">Installation Speaker</a></li>
+					<li><a href="#">Outdoor Speaker</a></li>
+					<li><a href="#">Accessory</a></li>
+				</ul>
+			</div>				
+
+			<div id="bottom-nav">
+				<ul>
+					<li><a href="#">О магазине</a></li>
+					<li><a href="#">Новости</a></li>
+					<li><a href="#">Оплата</a></li>
+					<li><a href="#">Доставка</a></li>
+					<li><a href="#">О магазине</a></li>
+				</ul>
+			</div>	
+		</div>
+	</div>
+
+	<div id="footer-wrapper">
+		<div id="footer">
+			<span id="copyright">2010 Jamo Москва. Все права защищены.</span>
+		</div>
+	</div>
+</body>
+	
+</html>

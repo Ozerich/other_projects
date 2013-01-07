@@ -1,0 +1,18 @@
+#special, #new-board{
+	margin-left: -21px !important;
+}
+
+#board-content .item-wrapper{
+	margin-bottom: 0 !important;
+}
+
+.switch{
+	margin-top: -16px !important;
+}
+a.switch-show, a.switch-hide{
+	margin-top: 0 !important;
+}
+
+.board-block .block-content{
+	padding-bottom: 22px !important;
+}
