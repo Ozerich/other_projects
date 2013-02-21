@@ -1,0 +1,117 @@
+#history_slider {
+
+  padding-bottom: 23px;
+  border-bottom: 1px dashed #353535;
+  margin: 28px 0;
+
+  .labels {
+    position: relative;
+    height: 26px;
+
+    div {
+      background: url('../img/history_slider/history_slider_label.png') no-repeat;
+      width: 46px;
+      height: 20px;
+      position: absolute;
+      font-size: 11px;
+      font-weight: bold;
+      text-align: center;
+
+      &.active {
+        background-image: url('../img/history_slider/history_slider_label_active.png');
+        color: #fff;
+      }
+    }
+  }
+
+  .slider {
+    .left {
+      background: url('../img/history_slider/history_slider_left.png') no-repeat;
+      width: 4px;
+      height: 11px;
+      display: block;
+      float: left;
+    }
+
+    .right {
+      background: url('../img/history_slider/history_slider_right.png') no-repeat;
+      width: 5px;
+      height: 11px;
+      display: block;
+      float: right
+    }
+
+    .line {
+      margin: 0 5px 0 3px;
+      background: url('../img/history_slider/history_slider_bg.png') repeat-x;
+      height: 11px;
+      position: relative;
+      cursor: pointer;
+
+      .point {
+        background: url('../img/history_slider/history_slider_point.png') no-repeat;
+        height: 15px;
+        top: -2px;
+        width: 11px;
+        position: absolute;
+      }
+
+      .pointer {
+        background: url('../img/history_slider/history_slider_pointer.png') no-repeat;
+        width: 22px;
+        height: 23px;
+        position: absolute;
+        top: -6px;
+        cursor: pointer;
+      }
+
+    }
+  }
+}
+
+.history-items {
+  margin-top: 41px;
+  height: 240px;
+  overflow: hidden;
+  position: relative;
+
+  .history-items-slider{
+    position: absolute;
+    height: 240px;
+    width: 100%;
+    top: 0;
+  }
+
+  .item {
+    height: 230px;
+    margin-bottom: 10px;
+  }
+
+  .year {
+    margin: 4px 43px 0 0;
+    width: 100px;
+    text-align: right;
+    padding-right: 4px;
+    line-height: 14px;
+    background: #b61316;
+    color: #fff;
+    font-weight: bold;
+    float: left;
+  }
+
+  .year-content {
+    margin-left: 143px;
+    color: #353535;
+    margin-right: 80px;
+    p {
+      margin-bottom: 30px;
+      line-height: 20px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+
+}
+

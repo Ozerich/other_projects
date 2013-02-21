@@ -1,0 +1,107 @@
+.gallery-page {
+
+  .gallery {
+    background: #183451;
+    width: 695px;
+    height: 362px;
+    margin: 0 0 35px -10px;
+
+    .button-previous, .button-next{
+      width: 23px;
+      height: 23px;
+      display: block;
+      position: absolute;
+      top: 250px;
+      z-index: 99999;
+
+      &.button-previous{
+        background: url('../img/arrow_gallery_left.png');
+        left: 10px;
+      }
+
+      &.button-next{
+        background: url('../img/arrow_gallery_right.png');
+        right: 10px;
+      }
+
+    }
+
+    .main-slider-content {
+      width: 505px;
+      height: 279px;
+      margin-right: 2px;
+      position: relative;
+
+      .sliders-wrapper,.sliders-wrapper ul, .sliders-wrapper ul li{
+        overflow: visible;
+      }
+
+      li {
+        .description {
+          position: absolute;
+          bottom: -65px;
+          z-index: 99999;
+          text-align: center;
+          width: 695px;
+          left: 0;
+          h2 {
+            font-size: 18px;
+            color: #f2f2f2;
+            font-family: "Times New Roman";
+            margin-bottom: 8px;
+          }
+          p{
+            color: #89b0d8;
+            line-height: 15px;
+          }
+        }
+      }
+    }
+
+    .navigator-content {
+      width: 190px;
+      padding-left: 4px;
+      background: #183451;
+      ul.navigator-wrap-inner {
+        top: 0;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        width: 100%;
+
+        li {
+          cursor: hand;
+          cursor: pointer;
+          list-style: none;
+          padding: 0;
+          margin-left: 0px;
+          overflow: hidden;
+          float: left;
+          display: block;
+          text-align: center;
+          margin: 1px 0;
+          position: relative;
+
+          .darken {
+            background: url('../img/gallery/gallery_darken.png') right center no-repeat;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            z-index: 9999;
+            position: absolute;
+          }
+
+          img {
+            height: 94px;
+            width: 186px;
+          }
+
+        }
+
+      }
+
+    }
+  }
+
+}
