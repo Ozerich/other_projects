@@ -1,0 +1,108 @@
+a {
+    font-size: 12px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.form {
+    width: 500px;
+    margin: 50px auto 0 auto;
+}
+
+.form label {
+    display: inline-block;
+    width: 200px;
+}
+
+.form input[type=file] {
+    display: inline-block;
+}
+
+.form .parser-item {
+    border-bottom: 1px dashed #aaa;
+    padding: 5px 0;
+}
+
+.form .form-submit {
+    margin: 15px 0;
+}
+
+.table {
+    width: 1000px;
+    margin: auto;
+    position: relative;
+}
+
+.table button {
+    float: right
+}
+
+.table table {
+    clear: both;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th {
+    font-size: 12px;
+    text-align: left;
+}
+
+.table td {
+    border-bottom: 1px dashed #aaa;
+}
+
+.table .overlay{
+    position: absolute;
+    z-index: 999;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #eee;
+    opacity: 0.3;
+    display: none;
+}
+
+.table .col-actions {
+    text-align: right;
+}
+
+table tr:nth-child(2n) td {
+    background: #fefefe;
+}
+
+table tr:hover td {
+    background: #cbffe1;
+}
+
+.form-add .param {
+    margin: 5px 0;
+}
+
+.form-add .param label {
+    display: inline-block;
+    width: 150px;
+}
+
+.form-add .param select, .form-add input[type=text] {
+    width: 350px;
+}
+
+.form-add button {
+    float: left;
+    margin-bottom: 5px;
+    margin-left: 20px;
+}
+
+
+
+.non-found .item-line td.brand, .non-found .item-line td.model {
+    color: red;
+}
+
+.non-found .item-line.known-brand td.brand {
+    color: #000;
+}
