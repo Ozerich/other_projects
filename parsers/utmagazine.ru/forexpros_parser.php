@@ -27,6 +27,7 @@ abstract class Downloader
     }
 
     private $get_params = "";
+    private $post_params = "";
 
     public function setGET($params)
     {
@@ -35,6 +36,15 @@ abstract class Downloader
             $value = $param . '=' . urlencode($value);
 
         $this->get_params = implode('&', $params);
+    }
+	
+	public function setPOST($params)
+    {
+        $params = is_array($params) ? $params : array($params);
+        foreach ($params as $param => &$value)
+            $value = $param . '=' . urlencode($value);
+
+        $this->post_params = implode('&', $params);
     }
 
     public function download($url, $ajax = false)
@@ -50,10 +60,10 @@ abstract class Downloader
 
         }
 
-        return $this->do_download($url_download, $ajax);
+        return $this->do_download($url_download, $this->post_params, $ajax);
     }
 
-    abstract public function do_download($url, $ajax);
+    abstract public function do_download($url, $post, $ajax);
 }
 
 class CURL_Downloader extends Downloader
@@ -73,8 +83,13 @@ class CURL_Downloader extends Downloader
     }
 
 
-    public function do_download($url, $ajax)
+    public function do_download($url, $post = "", $ajax = false)
     {
+		if($post){
+			curl_setopt( $this->curl, CURLOPT_POST, true );
+			curl_setopt( $this->curl, CURLOPT_POSTFIELDS, $post );
+		}
+		
         curl_setopt($this->curl, CURLOPT_URL, $url);
 
         if (!empty($this->referer)) {
@@ -119,7 +134,7 @@ class ForexprosParser
     private $downloader;
     private $logger;
 
-    static $requestUrl = "http://www.forexpros.ru/common/economicCalendar/economicCalendar.data.php";
+    static $requestUrl = "http://ru.investing.com/economic-calendar/filter";
 
     private $timezone;
 
@@ -140,20 +155,6 @@ class ForexprosParser
         return $date['year'] . '-' . $date['mon'] . '-' . $date['mday'];
     }
 
-    private function getValuesParam($date_start, $date_finish, $currencies)
-    {
-        $result = 'dateFrom=' . $this->convertDate($date_start) . ',dateTo=' . $this->convertDate($date_finish);
-
-        $currencies = is_array($currencies) ? $currencies : array($currencies);
-        foreach ($currencies as $currency) {
-            //  $result .= ',currency=' . $currency;
-        }
-
-        $result .= ',timeZone=' . $this->timezone . ",dts=off";
-
-        return $result;
-    }
-
     private function getStartWeek()
     {
         $date = getdate();
@@ -171,21 +172,15 @@ class ForexprosParser
 
     private function parse($html)
     {
+		$json = json_decode($html);
+		if(!isset($json->renderedFilteredEvents))return array();
+		$html = $json->renderedFilteredEvents;
+		
+		
         $result = array();
-
-        preg_match_all('#whiteFont.+?<td.+?>(.+?)</td>#sui', $html, $days, PREG_SET_ORDER);
-
-        foreach ($days as $day) {
-
-            $weekday = $day[1];
-
-            $html = substr($html, strpos($html, $weekday));
-            $day_text = strpos($html, 'whiteFont') !== false ? substr($html, 0, strpos($html, 'whiteFont')) : $html;
-            $result[$weekday] = array();
-
-            preg_match_all('#<tr onmouseout=.+?<td.+?>(.+?)</td><td.+?>(.+?)</td><td.+?>(.+?)</td><td.+?>(.+?)</td><td.+?>(.+?)</td><td.+?>(.+?)</td><td.+?>(.+?)</td><td.+?>(.+?)</td><td.+?>(.+?)</td></tr>#sui', $day_text, $items, PREG_SET_ORDER);
-
-            $flags = array(
+		$weekday = 0;
+		
+		      $flags = array(
                 'China' => 'asian',
                 'United_Kingdom' => 'england',
                 'Germany' => 'german',
@@ -194,29 +189,57 @@ class ForexprosParser
                 'Russian_Federation' => 'russia',
                 'Europe' => 'eurounion',
                 'New_Zealand' => 'austr',
+                'Australia' => 'austr',
                 'Canada' => 'canada',
             );
-
-            foreach ($items as $item) {
-                preg_match('#class\=\"ceFlags (.+?)\"#sui', $item[2], $flag);
-                $flag = isset($flag[1]) && isset($flags[$flag[1]]) ? $flags[$flag[1]] : 'blank';
-                preg_match('#red_(\d+)_BullishIcon#sui', $item[3], $bulls);
-                $bulls = $bulls[1];
-
-                if ($flag == 'usa' || $bulls == 3) {
-                    $result[$weekday][] = array(
-                        'time' => $this->p($item[1]),
-                        'currency' => $this->p($item[2]),
-                        'bulls' => $bulls,
-                        'name' => $this->p($item[4]),
-                        'fact' => $this->p($item[5]),
-                        'forecast' => $this->p($item[6]),
-                        'prev' => $this->p($item[7]),
-                        'flag' => $flag
-                    );
-                }
-            }
-        }
+		
+		preg_match_all('#<tr(.*?)>(.+?)</tr>#sui', $html, $rows, PREG_SET_ORDER);
+				
+			foreach($rows as $row){
+				if(strpos($row[1], 'event') === false){
+					preg_match('#>(.+?),#sui', $row[2], $weekday);
+					$weekday = $weekday[1];
+					$result[$weekday] = array();
+					continue;
+				}
+				
+				if(!preg_match('#<td class="center time">(.+?)</td>#sui', $row[2], $time))continue;
+				$time = $this->p($time[1]);
+				
+				preg_match('#<td class="flagCur"><span title=".+?" class="ceFlags (.+?)">.+?</span>(.+?)</td>#sui', $row[2], $country);
+				$flag = isset($flags[$country[1]]) ? $flags[$country[1]] : '';
+				$currency = $this->p($country[2]);
+				
+				preg_match('#<td class="sentiment".*?>(.+?)</td>#sui', $row[2], $bulls_block);
+				$bulls = substr_count($bulls_block[1], 'Full');
+				
+				preg_match('#<td class="left event">(.+?)</td>#sui', $row[2], $name);
+				$name = $this->p($name[1]);
+				
+				preg_match('#<td class="fore.*?>(.+?)</td>#sui', $row[2], $fact);
+				$fact = $this->p($fact[1]);
+				
+				preg_match('#<td class="prev.*?>(.+?)</td>#sui', $row[2], $forecast);
+				$forecast = $this->p($forecast[1]);
+				
+				preg_match('#<td class="diamond.*?>(.+?)</td>#sui', $row[2], $prev);
+				$prev = $this->p($prev[1]);
+				
+				$result[$weekday][] = array(
+					'time' => $time,
+					'currency' => $currency,
+					'bulls' => $bulls,
+					'name' => $name,
+					'fact' => $fact,
+					'forecast' => $forecast,
+					'prev' => $prev,
+					'flag' => $flag
+				);
+				
+				
+		}
+		
+      
         return $result;
     }
 
@@ -241,13 +264,13 @@ class ForexprosParser
         $end_week = $start_week + 7 * 86400 - 1;
         $this->reset($start_week, $end_week);
 
-        $valueParams = $this->getValuesParam($start_week, $end_week, $currencies);
 
-        $this->downloader->setGET(
+        $this->downloader->setPOST(
             array(
-                'action' => 'filter',
-                'elemntsValues' => $valueParams,
-                'timeFrame' => 'weekly'
+                'dateFrom' => $this->convertDate($start_week),
+                'dateTo' => $this->convertDate($end_week),
+                'timeZone' => $this->timezone,
+				'quotes_search_text' => 'Название События',
             )
         );
 
@@ -263,11 +286,13 @@ class ForexprosParser
         $day_names = array('Понедельник' => 0, 'Вторник' => 1, 'Среда' => 2, 'Четверг' => 3, 'Пятница' => 4, 'Суббота' => 5, 'Воскресенье' => 6);
 
         foreach ($items as $day => $data) {
-            $day_name = substr($day, 0, strpos($day, ','));
-            $day_num = $day_names[$day_name];
+            $day_num = $day_names[$day];
             $day_start = $start_week + 86400 * $day_num;
 
             foreach ($data as $item) {
+				
+				if($item['flag'] != 'usa' && $item['bulls'] != 3) continue;
+				
                 $item_time = $day_start + (substr($item['time'], 0, 2) * 3600 + substr($item['time'], 3, 2) * 60);
 
                 $post_id = wp_insert_post(array(
