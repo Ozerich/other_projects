@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>парсер для сайтa bus.gov.ru</title>
+
+    <link rel="stylesheet" type="text/css" href="/css/reset.css">
+    <link rel="stylesheet" type="text/less" href="/css/styles.less">
+
+    <script src="/js/thirdparty/less-1.3.3.min.js"></script>
+    <script src="/js/thirdparty/jquery-1.9.1.min.js"></script>
+    <script src="/js/thirdparty/knockout-2.2.1.js"></script>
+
+    <script src="/js/select.js"></script>
+    <script src="/js/scripts.js"></script>
+</head>
+<body>
+<div id="page_container">
+
+    <section class="filter-container" data-bind="visible: task_form_visible">
+        <header>
+            <h1>Новая задача</h1>
+
+            <div class="button white left">
+                <input type="submit" value="Отменить" data-bind="click: cancel_task_form_click">
+                <span class="button-right"></span>
+            </div>
+
+            <div class="button">
+                <input type="submit" value="Добавить" data-bind="click: submit_task_form_click">
+                <span class="button-right"></span>
+            </div>
+
+        </header>
+
+        <div class="loader" data-bind="visible: loading_filter"></div>
+
+        <div class="container" data-bind="visible: !loading_filter()">
+
+            <div class="row">
+                <label>Федеральный округ</label>
+
+                <div id="okrugs_select"></div>
+            </div>
+
+            <div class="row">
+                <label>Субъект РФ</label>
+
+                <div id="subjects_select"></div>
+            </div>
+
+            <div class="row">
+                <label>Район/Город</label>
+
+                <div id="cities_select"></div>
+            </div>
+            <div class="row">
+                <label>Тип учреждения</label>
+
+                <div id="types_select"></div>
+            </div>
+
+            <div class="row">&nbsp;</div>
+        </div>
+
+    </section>
+
+    <section class="tasks" data-bind="visible: tasks_list_visible">
+        <header>
+            <h1>Добавленные задачи</h1>
+
+            <div class="button left" data-bind="visible: !in_progress() && !task_form_visible()">
+                <input type="submit" value="Добавить задачу" data-bind="click: add_task_click">
+                <span class="button-right"></span>
+            </div>
+
+            <div class="button" data-bind="visible: tasks().length > 0 && !in_progress()">
+                <input type="submit" value="Старт" data-bind="click:start_click">
+                <span class="button-right"></span>
+            </div>
+
+
+            <div class="button white" data-bind="visible: in_progress">
+                <input type="submit" value="Стоп" data-bind="click: stop_click">
+                <span class="button-right"></span>
+            </div>
+
+        </header>
+
+
+        <div class="tasks">
+            <p class="no-items" data-bind="visible: tasks().length == 0">Нет задач</p>
+
+            <table class="tasks-list" data-bind="visible: tasks().length > 0">
+                <thead>
+                <tr>
+                    <th class="column-cities">Округ</th>
+                    <th class="column-cities">Субъект</th>
+                    <th class="column-cities">Город</th>
+                    <th class="column-type">Тип учреждения</th>
+                    <th class="column-progress">Прогресс</th>
+                </tr>
+                </thead>
+                <tbody data-bind="foreach: tasks">
+                <tr>
+                    <td class="column-cities" data-bind="text: okrug.label"></td>
+                    <td class="column-cities" data-bind="text: subjects_str()"></td>
+                    <td class="column-cities" data-bind="text: cities_str()"></td>
+                    <td class="column-type" data-bind="text: type.label"></td>
+                    <td class="column-progress" data-bind="text: progress">
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </section>
+
+    <p class="warning" data-bind="visible: in_progress">Не закрывайте браузер до завершения работы парсера</p>
+    <section>
+        <header>
+            <h1>Готовые выгрузки</h1>
+
+            <div class="button" data-bind="visible: !loading_list()">
+                <input type="submit" value="Обновить" data-bind="click:updateList">
+                <span class="button-right"></span>
+            </div>
+
+        </header>
+
+        <div class="loader" data-bind="visible: loading_list"></div>
+
+        <div class="container" data-bind="visible: !loading_list()">
+            <p class="no-items" data-bind="visible: history_items().length == 0">Нет файлов</p>
+            <table class="tasks-list" data-bind="visible: history_items().length > 0">
+                <thead>
+                <tr>
+                    <th>Дата</th>
+                    <th>Время начала</th>
+                    <th>Время окончания</th>
+                    <th>Количество компаний</th>
+                    <th>Федеральный округ</th>
+                    <th>Субьект РФ</th>
+                    <th>Город</th>
+                    <th>Тип учреждения</th>
+                    <th class="column-actions"></th>
+                </tr>
+                </thead>
+                <tbody data-bind="foreach: history_items_paged">
+                <tr>
+                    <td data-bind="text: date"></td>
+                    <td data-bind="text: time_start"></td>
+                    <td data-bind="text: time_finish"></td>
+                    <td data-bind="text: count"></td>
+                    <td data-bind="text: okrug"></td>
+                    <td data-bind="text: subject"></td>
+                    <td data-bind="text: city"></td>
+                    <td data-bind="text: type"></td>
+                    <td class="column-actions">
+                        <a href="#" class="btn-download" data-bind="attr: {href: url}"></a>
+                        <a href="#" class="btn-delete" data-bind="click: $root.deleteFile"></a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="pager" data-bind="visible: history_pages().length > 0">
+                <label>Страница: </label>
+                <select data-bind="options: history_pages, value: history_page"></select>
+            </div>
+        </div>
+    </section>
+
+</div>
+</body>
+</html>

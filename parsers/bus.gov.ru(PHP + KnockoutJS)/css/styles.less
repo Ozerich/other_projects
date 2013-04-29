@@ -1,0 +1,336 @@
+body {
+  font-family: "Trebuchet MS", Arial;
+  font-size: 12px;
+  color: #4a4a4a;
+}
+
+#page_container {
+  width: 900px;
+  margin: 10px auto;
+}
+
+.button {
+  width: auto;
+  background: url("../img/bg_mainFormButton1_left.png") no-repeat left;
+  float: left;
+  margin: 0 5px 0 2px;
+  cursor: pointer;
+
+  input {
+    background: url("../img/bg_button1.png") repeat-x;
+    margin: 0 0 0 5px;
+    border: 0;
+    clear: none;
+    font: normal 14px "Calibri", "Arial";
+    height: 29px;
+    padding: 0 10px;
+    float: left;
+    cursor: pointer;
+  }
+
+  .button-right {
+    width: 5px;
+    height: 29px;
+    background: url("../img/bg_mainFormButton1_right.png") no-repeat right;
+    float: left;
+    cursor: pointer;
+  }
+
+  &.white {
+    background: url('../img/bg_mainFormButton2_left.png');
+    input {
+      background: url('../img/bg_button2.png');
+    }
+    .button-right {
+      background: url('../img/bg_mainFormButton2_right.png');
+    }
+  }
+
+}
+
+.manySelect {
+  float: left;
+  width: 510px;
+
+  .msExpandButton {
+    width: 24px;
+    height: 25px;
+    margin: -1px 0 0 0;
+    float: right;
+    background: url("../img/bg_msExpandButton.png") no-repeat;
+    cursor: pointer;
+  }
+  .msExpandButton:hover {
+    background: url("../img/bg_msExpandButton_hover.png") no-repeat;
+  }
+  .msExpandButton.not {
+    display: none;
+  }
+  .msExpandButton.active {
+    background: url("../img/bg_msExpandButton_active.png") no-repeat;
+  }
+  .msExpandButton.active:hover {
+    background: url("../img/bg_msExpandButton_activeHover.png") no-repeat;
+  }
+
+  .collapsed {
+    float: left;
+    width: 510px;
+    background: #fff;
+    position: relative;
+    padding: 0 0 0 10px;
+    border: solid 1px #b9bcbe;
+    font: normal 14px "Calibri", "Arial";
+    color: #a8a8a8;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    behavior: url(PIE.htc);
+  }
+  .collapsed .expandInfo {
+    padding: 0 0 5px 0;
+    float: left; /*width:60%;*/
+    clear: both;
+  }
+
+  .collapsed .msPlaceholder {
+    padding: 0 0 4px 0;
+    margin: 3px 0 0 0;
+    float: left;
+    clear: both;
+    width: 80%;
+  }
+  .collapsed .msPlaceholder2 {
+    padding: 0 0 4px 0;
+    margin: 3px 0 0 0;
+    float: left;
+    clear: both;
+    width: 80%;
+    display: none;
+  }
+  .collapsed .msPlaceholder2 .count {
+    font: normal 14px "Calibri", "Arial";
+    color: #a8a8a8;
+  }
+
+  .expanded {
+    float: left;
+    width: 510px;
+    height: 100px;
+    margin: 10px 0 0 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background: #fff;
+    border: solid 1px #b9bcbe;
+    padding: 5px 0 5px 10px;
+    clear: both;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    behavior: url(PIE.htc);
+  }
+  .expanded .line {
+    float: left;
+    width: 100%;
+    clear: both;
+    margin: 5px 0 2px 0;
+  }
+  .expanded .line label {
+    float: left;
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+  }
+  .expanded .line input[type="checkbox"] {
+    float: left;
+    margin: 1px 5px 0 0;
+  }
+}
+
+.loader {
+  background: url('../img/preloader.gif') center center no-repeat;
+  display: block;
+  width: 100%;
+  height: 100px;
+}
+
+
+table{
+    width: 100%;
+    th, td {
+      text-align: center;
+    }
+    th {
+      font-weight: bold;
+      padding: 10px 0;
+      vertical-align: bottom;
+      border-bottom: 1px solid #000;
+    }
+    td{
+      padding: 10px 5px;
+      border-bottom: 1px dashed #aaa;
+    }
+
+    tr:nth-child(2n){
+      td{
+        background: #f4f4f3;
+      }
+    }
+	
+	.column-actions{
+		min-width: 40px;
+		width: 40px;
+
+	.btn-download{
+		background: url('../img/icon-download.png');
+		width: 16px;
+		height: 16px;
+		display: block;
+		float: left;
+		margin-right: 5px;
+	}
+	
+	.btn-delete{
+		background: url('../img/icon-delete.png');
+		width: 16px;
+		height: 16px;
+		display: block;
+		float: left;
+	}
+		}
+	
+}
+
+section {
+  background: #e7e5dd;
+
+
+  .no-items {
+    font-size: 20px;
+    display: block;
+    text-align: center;
+    line-height: 40px;
+  }
+
+  header {
+    background: #f5f5f0;
+    padding: 10px 0;
+    margin: 0;
+    text-align: center;
+
+    h1 {
+      color: #737373;
+      font: bold 17px "Trebuchet MS";
+    }
+
+    .button {
+      float: right;
+      margin-top: -25px;
+      &.left {
+        float: left;
+      }
+    }
+  }
+}
+
+.pager{
+  margin-left: 5px;
+}
+
+.filter-container {
+
+  .extendedSearchAverageSelect {
+    margin-top: 8px;
+  }
+
+  .row {
+    overflow: hidden;
+    clear: both;
+    margin: 8px 0;
+
+    > div {
+      float: left;
+      width: 350px;
+    }
+
+    div {
+      position: relative;
+      select {
+        position: relative;
+        z-index: 10;
+        width: 101.5%;
+        height: 19px !important;
+        line-height: 19px;
+        cursor: pointer;
+
+      }
+
+      span.select {
+        position: relative;
+        margin-top: -26px;
+        float: left;
+        width: 100%;
+        height: 26px;
+        line-height: 28px !important;
+
+        text-indent: 10px;
+        background: url(../img/bg_select.png) repeat-x;
+        cursor: default;
+        z-index: 1;
+        padding: 0 0 0 0;
+
+      }
+
+      span.select .selectRight {
+        position: relative;
+        float: right;
+        margin-right: -13px;
+        width: 26px;
+        height: 26px;
+        line-height: 26px;
+        text-indent: 10px;
+        background: url(../img/bg_selectRight.png) no-repeat 0 0;
+        cursor: pointer;
+        z-index: 1;
+        padding: 0 !important;
+      }
+
+      span.select .selectLeft {
+        position: relative;
+        float: left;
+        margin-left: -1px;
+        width: 5px;
+        height: 26px;
+        line-height: 26px;
+        text-indent: 10px;
+        background: url(../img/bg_selectLeft.png) no-repeat 0 0;
+        cursor: default;
+        z-index: 1;
+        padding: 0 !important;
+      }
+
+    }
+
+    label {
+      float: left;
+      width: 40%;
+      padding: 5px 10px 0 0;
+      font: bold 14px "Calibri", "Arial";
+      text-align: right;
+    }
+  }
+
+}
+
+.tasks {
+  background: #e7e5dd;
+  margin-bottom: 15px;
+}
+
+.warning{
+  color: red;
+  font-size: 25px;
+  text-align: center;
+  display: block;
+  margin-bottom: 15px;
+}
