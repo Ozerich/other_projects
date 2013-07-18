@@ -1,0 +1,2 @@
+top bar, navigation, content, footer: 		verdana 11, 12, 13 pt
+teaser text:					times new roman 30 pt
