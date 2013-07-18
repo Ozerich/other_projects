@@ -1,0 +1,4 @@
+/assets/
+protected/runtime/*
+.idea
+/protected/config/db.php

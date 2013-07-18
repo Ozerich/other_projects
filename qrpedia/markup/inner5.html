@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<title>inner5</title>
+	<link rel="stylesheet" type="text/css" href="css/all.css" />
+	<link rel="stylesheet" media="screen" type="text/css" href="colorpicker/css/colorpicker.css" />
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="js/html5shiv.js"></script>
+	<script type="text/javascript" src="js/jquery.form.js"></script>
+	<script type="text/javascript" src="colorpicker/js/colorpicker.js"></script>
+</head>
+<body>
+	<div class="header-bg">
+		<header>
+			<a href="#" class="logo"></a>
+			<a href="#" class="button"><img src="images/button-img.gif" alt="">Пополнить</a>
+			<span class="balans">Баланс <span>100$</span></span>
+		</header>
+	</div>
+	<div class="holder">
+		<menu>
+			<li class="active"><a href="#">Объявления</a><span class="shadow"></span></li>
+			<li><a href="#">Личные данные</a><span class="shadow"></span></li>
+			<li><a href="#">Платежи и документы</a><span class="shadow"></span></li>
+		</menu>
+		<section>
+			<div class="left-aside">
+				<span class="h2">Конструктор</span>
+				<form action="#">
+					<fieldset class="designer">
+						<div class="box">
+							<label>Тип объявления:</label>
+							<select class="select select5">
+								<option>Расширенная визитка компании</option>
+								<option>Расширенная визитка компании1</option>
+								<option>Расширенная визитка компании2</option>
+								<option>Расширенная визитка компании3</option>
+								<option>Расширенная визитка компании4</option>
+								<option>Расширенная визитка компании5</option>	
+							</select>
+						</div>
+						<div class="box">
+							<label for="n11">Название компании:</label>
+							<input id="n11" type="text" class="input">
+						</div>
+						<div class="box">
+							<label for="n12">Логотип:</label>
+							<input id="n12" type="file" class="but" title="Загрузить">
+						</div>
+						<div class="box">
+							<label for="n13">Телефон:</label>
+							<span>+7</span>
+							<div class="cod"><input id="n13" type="text" class="input input2"></div>
+							<span>-</span>
+							<input type="text" class="input input3">
+							<span>-</span>
+							<input type="text" class="input input4">
+							<span>-</span>
+							<input type="text" class="input input4">
+						</div>
+						<div class="box">
+							<label for="n14">Факс:</label>
+							<span>+7</span>
+							<div class="cod"><input id="n14" type="text" class="input input2"></div>
+							<span>-</span>
+							<input type="text" class="input input3">
+							<span>-</span>
+							<input type="text" class="input input4">
+							<span>-</span>
+							<input type="text" class="input input4">
+						</div>
+						<div class="box">
+							<label for="n15">Краткая информация:</label>
+							<textarea id="15" class="textarea" cols="5" rows="5"></textarea>
+						</div>
+						<div class="box">
+							<label for="n16">Адрес компании:</label>
+							<textarea id="n16" class="textarea textarea2" cols="5" rows="5"></textarea>
+						</div>
+						<div class="box">
+							<label for="n17">Логотип:</label>
+							<input id="n17" type="file" class="but" title="Загрузить">
+							<span class="link">+ <a href="#">Добавить еще фото</a></span>
+						</div>
+						<div class="box">
+							<label>Привязать акцию:</label>
+							<select class="select select5">
+								<option>Акция</option>
+								<option>Акция1</option>
+								<option>Акция2</option>
+								<option>Акция3</option>
+								<option>Акция4</option>
+								<option>Акция5</option>
+							</select>
+						</div>
+						<input type="submit" class="button-new" value="Отправить на модерацию">
+					</fieldset>
+				</form>
+			</div>
+			<div class="right-aside">
+				<span class="h2">Просмотр</span>
+				<div class="color-box">
+					<div class="color">
+						<div class="customWidget">
+							<div class="colorSelector2"><div style="background-color:#3a3a3a"></div></div>
+						</div>
+						<p>Цвет<br> фона</p>
+					</div>
+					<div class="color">
+						<div class="customWidget">
+							<div class="colorSelector2"><div style="background-color:#898f9b"></div></div>
+						</div>
+						<p>Цвет<br> текста</p>
+					</div>
+					<div class="color">
+						<div class="customWidget">
+							<div class="colorSelector2"><div style="background-color:#dbc113"></div></div>
+						</div>
+						<p>Цвет<br> заголовков</p>
+					</div>
+					<a href="#" class="but">Загрузить</a>
+				</div>
+				<div class="photo-block">
+					<div class="photo">
+						<img src="images/img01.jpg" alt="">
+					</div>
+					<div class="opis">
+						<a href="#" class="black">Создать QR-код</a>
+						<div class="qr">
+							<img src="images/img02.jpg" alt="">
+							<form action="#">
+								<fieldset>
+									<select class="select4">
+										<option>Формат</option>
+										<option>Формат1</option>
+										<option>Формат2</option>
+									</select>
+									<div class="box">
+										<input type="text" class="input">
+										<span>px</span>
+									</div>
+									<a href="#" class="but">Скачать QR-код</a>
+									<span class="link"><a href="#">Оформить код</a></span>
+									<span class="link"><a href="#">HTML для сайта</a></span>
+								</fieldset>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+</body>
+</html>

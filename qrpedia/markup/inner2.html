@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<title>inner2</title>
+	<link rel="stylesheet" type="text/css" href="css/all.css" />
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="js/html5shiv.js"></script>
+	<script type="text/javascript" src="js/jquery.simpleLightbox.js"></script>
+	<script type="text/javascript" src="js/jquery.form.js"></script>
+	<script type="text/javascript" src="js/jquery.main.js"></script>
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+	<script type="text/javascript">
+		google.load("visualization", "1", {packages:["corechart"]});
+		var options = {
+			colors: ['#eead65'],
+			fontSize: 11,
+			legend:{position:'none'},
+			chartArea:{left:26,top:21,width:650,height:428},
+			vAxis: {
+				gridlines: {count:6}
+			}
+		};
+	</script>
+</head>
+<body>
+	<div class="header-bg">
+		<header>
+			<a href="#" class="logo"></a>
+			<a href="#" class="button"><img src="images/button-img.gif" alt="">Пополнить</a>
+			<span class="balans">Баланс <span>100$</span></span>
+		</header>
+	</div>
+	<div class="holder">
+		<menu>
+			<li class="active"><a href="#">Компании</a><span class="shadow"></span></li>
+			<li><a href="#">Все объявления</a><span class="shadow"></span></li>
+			<li><a href="#">Платежи и документы</a><span class="shadow"></span></li>
+			<li><a href="#">Статистика</a><span class="shadow"></span></li>
+		</menu>
+		<section>
+			<a href="#popup" class="button-new">Создать новую</a>
+			<table>
+				<tbody>
+					<tr>
+						<th>№ п/п</th>
+						<th>Дата</th>
+						<th>Название</th>
+						<th>Баланс</th>
+						<th>Форма</th>
+						<th>Пакет</th>
+						<th>Отрасль</th>
+						<th>Статус</th>
+						<th>Модератор</th>
+					</tr>
+					<tr>
+						<td><span>1</span></td>
+						<td>21.12.2012</td>
+						<td><a class="name" href="#popup4">ООО "Название"</a></td>
+						<td>57$</td>
+						<td>ООО</td>
+						<td><a href="#" class="grey">Расширенный</a></td>
+						<td>Сборочное предприятие</td>
+						<td><span class="red">Новая</span></td>
+						<td>
+							<a href="#" class="button">Принять</a>
+							<a href="#" class="link">Отклонить</a>
+						</td>
+					</tr>
+					<tr>
+						<td><span>2</span></td>
+						<td>21.12.2012</td>
+						<td><a class="name" href="#popup3">Иванов<br>  Иван Иванович</a></td>
+						<td>0.03$</td>
+						<td>Физ. лицо</td>
+						<td><a href="#" class="grey">Базовый</a></td>
+						<td>Розничная торговля</td>
+						<td><span class="green">Активная</span></td>
+						<td>
+							<a href="#" class="link">Статистика</a>
+							<a href="#" class="link">Отключить</a>
+						</td>
+					</tr>	
+					<tr>
+						<td><span>3</span></td>
+						<td>21.12.2012</td>
+						<td><a class="name" href="#popup4">ООО "Название"</a></td>
+						<td>57$</td>
+						<td>ООО</td>
+						<td><a href="#" class="grey">Расширенный</a></td>
+						<td>Сборочное предприятие</td>
+						<td><span class="red">Новая</span></td>
+						<td>
+							<a href="#" class="button">Принять</a>
+							<a href="#" class="link">Отклонить</a>
+						</td>
+					</tr>
+					<tr>
+						<td><span>4</span></td>
+						<td>21.12.2012</td>
+						<td><a class="name" href="#popup3">Иванов<br> Иван Иванович</a></td>
+						<td>0.03$</td>
+						<td>Физ. лицо</td>
+						<td><a href="#" class="grey">Базовый</a></td>
+						<td>Розничная торговля</td>
+						<td><span class="green">Активная</span></td>
+						<td>
+							<a href="#" class="link">Статистика</a>
+							<a href="#" class="link">Отключить</a>
+						</td>
+					</tr>		
+					<tr>
+						<td><span>5</span></td>
+						<td>21.12.2012</td>
+						<td><a class="name" href="#popup4">ООО "Название"</a></td>
+						<td>57$</td>
+						<td>ООО</td>
+						<td><a href="#" class="grey">Расширенный</a></td>
+						<td>Сборочное предприятие</td>
+						<td><span class="red">Новая</span></td>
+						<td>
+							<a href="#" class="button">Принять</a>
+							<a href="#" class="link">Отклонить</a>
+						</td>
+					</tr>
+					<tr>
+						<td><span>6</span></td>
+						<td>21.12.2012</td>
+						<td><a class="name" href="#popup3">Иванов<br>  Иван Иванович</a></td>
+						<td>0.03$</td>
+						<td>Физ. лицо</td>
+						<td><a href="#" class="grey">Базовый</a></td>
+						<td>Розничная торговля</td>
+						<td><span class="green">Активная</span></td>
+						<td>
+							<a href="#" class="link">Статистика</a>
+							<a href="#" class="link">Отключить</a>
+						</td>
+					</tr>		
+					<tr>
+						<td><span>7</span></td>
+						<td>21.12.2012</td>
+						<td><a class="name" href="#popup4">ООО "Название"</a></td>
+						<td>57$</td>
+						<td>ООО</td>
+						<td><a href="#" class="grey">Расширенный</a></td>
+						<td>Сборочное предприятие</td>
+						<td><span class="red">Новая</span></td>
+						<td>
+							<a href="#" class="button">Принять</a>
+							<a href="#" class="link">Отклонить</a>
+						</td>
+					</tr>
+					<tr>
+						<td><span>8</span></td>
+						<td>21.12.2012</td>
+						<td><a class="name" href="#popup3">Иванов<br>  Иван Иванович</a></td>
+						<td>0.03$</td>
+						<td>Физ. лицо</td>
+						<td><a href="#" class="grey">Базовый</a></td>
+						<td>Розничная торговля</td>
+						<td><span class="green">Активная</span></td>
+						<td>
+							<a href="#" class="link">Статистика</a>
+							<a href="#" class="link">Отключить</a>
+						</td>
+					</tr>
+					<tr>
+						<td><span>9</span></td>
+						<td>21.12.2012</td>
+						<td><a class="name" href="#popup4">ООО "Название"</a></td>
+						<td>57$</td>
+						<td>ООО</td>
+						<td><a href="#" class="grey">Расширенный</a></td>
+						<td>Сборочное предприятие</td>
+						<td><span class="red">Новая</span></td>
+						<td>
+							<a href="#" class="button">Принять</a>
+							<a href="#" class="link">Отклонить</a>
+						</td>
+					</tr>
+					<tr>
+						<td><span>10</span></td>
+						<td>21.12.2012</td>
+						<td><a class="name" href="#popup3">Иванов<br>  Иван Иванович</a></td>
+						<td>0.03$</td>
+						<td>Физ. лицо</td>
+						<td><a href="#" class="grey">Базовый</a></td>
+						<td>Розничная торговля</td>
+						<td><span class="green">Активная</span></td>
+						<td>
+							<a href="#" class="link">Статистика</a>
+							<a href="#" class="link">Отключить</a>
+						</td>
+					</tr>					
+				</tbody>
+			</table>
+			<div class="pager-box">
+				<p><span>Показано</span> 10 компаний из 145</p>
+				<a href="#" class="next"></a>
+				<ul class="pager">
+					<li><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+					<li class="active">6</li>
+					<li><a href="#">7</a></li>
+					<li><a href="#">8</a></li>
+					<li><a href="#">9</a></li>
+					<li><a href="#">10</a></li>
+					<li>...</li>
+					<li><a href="#">20</a></li>
+				</ul>
+				<a href="#" class="prev"></a>
+			</div>
+		</section>
+	</div>
+	<div class="popup cartochka" id="popup">
+		<a href="#" class="close"></a>
+		<span class="h2">Карточка заявки <span>№326</span></span>
+		<form action="#">
+			<fieldset>
+				<div class="box">
+					<label>Статус:</label>
+					<select class="select">
+						<option>Новая</option>
+						<option>Новая 2</option>
+						<option>Новая 3</option>
+						<option>Новая 4</option>
+						<option>Новая 5</option>
+						<option>Новая 6</option>
+					</select>
+				</div>
+				<div class="box">
+					<label>Тип аккаунта:</label>
+					<select class="select">
+						<option>Социальный пакет</option>
+						<option>Социальный пакет1</option>
+						<option>Социальный пакет2</option>
+						<option>Социальный пакет3</option>
+						<option>Социальный пакет4</option>
+						<option>Социальный пакет5</option>
+					</select>
+				</div>
+				<div class="box">
+					<label>Тип пакета:</label>
+					<select class="select">
+						<option>Базовый</option>
+						<option>Базовый1</option>
+						<option>Базовый2</option>
+						<option>Базовый3</option>
+						<option>Базовый4</option>
+						<option>Базовый5</option>
+					</select>
+					<a href="#popup2" class="but">Настроить</a>
+				</div>
+				<div class="box">
+					<label for="n1">Название:</label>
+					<input id="n1" type="text" class="input">
+				</div>
+				<div class="box">
+					<label for="n2">Юридический адрес:</label>
+					<input id="n2" type="text" class="input">
+				</div>
+				<div class="box">
+					<label>Юридическая форма:</label>
+					<select class="select">
+						<option>Физическое лицо</option>
+						<option>Физическое лицо1</option>
+						<option>Физическое лицо2</option>
+						<option>Физическое лицо3</option>
+						<option>Физическое лицо4</option>
+						<option>Физическое лицо5</option>
+					</select>
+				</div>
+				<div class="box">
+					<label>Отрасль:</label>
+					<select class="select">
+						<option>Торговля</option>
+						<option>Торговля1</option>
+						<option>Торговля2</option>
+						<option>Торговля3</option>
+						<option>Торговля4</option>
+						<option>Торговля5</option>
+					</select>
+				</div>
+				<div class="box">
+					<label for="n3">Реквизиты:</label>
+					<textarea cols="5" rows="5" class="textarea" id="n3"></textarea>
+				</div>
+				<div class="box">
+					<label for="n4">Адрес:</label>
+					<input id="n4" type="text" class="input">
+				</div>
+				<div class="box">
+					<label for="n5">Телефон:</label>
+					<span>+7</span>
+					<div class="cod">
+						<input id="n5" type="text" class="input input4">
+					</div>
+					<span>-</span>
+					<input type="text" class="input input2">
+					<span>-</span>
+					<input type="text" class="input input3">
+					<span>-</span>
+					<input type="text" class="input input3">
+				</div>
+				<div class="box">
+					<label for="n6">E-mail (логин):</label>
+					<input id="n6" type="text" class="input">
+				</div>
+				<div class="box">
+					<label for="n7">Пароль:</label>
+					<input id="n7" type="password" class="input">
+				</div>
+				<div class="box">
+					<label for="n8">Контактное лицо:</label>
+					<input id="n8" type="text" class="input">
+				</div>
+				<div class="links">
+					<input type="submit" class="button-new" value="Сохранить">
+					<a href="#" class="grey close-btn">Отмена</a>
+				</div>
+			</fieldset>
+		</form>
+	</div>
+	<div class="popup paket" id="popup2">
+		<a href="#" class="close"></a>
+		<span class="h2">Настройка пакета</span>
+		<form action="#" onsubmit="saveFn()">
+			<fieldset>
+				<div class="box">
+					<label for="n10">Количество объявлений:</label>
+					<input id="n10" type="text" class="input input5" value="1">
+					<span>шт.</span>
+				</div>
+				<div class="box">
+					<label>Тип объявлений:</label>
+					<select class="select select2">
+						<option>Расширенное</option>
+						<option>Расширенное1</option>
+						<option>Расширенное2</option>
+						<option>Расширенное3</option>
+						<option>Расширенное4</option>
+						<option>Расширенное5</option>
+					</select>
+				</div>
+				<div class="box">
+					<label>Период действия объявления:</label>
+					<select class="select select3">
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+						<option>6</option>
+						<option>7</option>
+						<option>8</option>
+					</select>
+					<span>мес.</span>
+				</div>
+				<div class="links">
+					<input type="submit" class="button-new" value="Сохранить">
+				</div>
+			</fieldset>
+		</form>
+	</div>
+	<div class="popup grafik-pop" id="popup4">
+		<a href="#" class="close"></a>
+		<span class="h2">ООО "Название"</span>
+		<ul class="tabset">
+			<li class="active"><a href="#tab1">Частота просмотров</a></li><li>
+			<a href="#tab2">География</a></li>
+		</ul>
+		<div id="tab1">
+			<div class="grafik" id="grafik"></div>
+		</div>
+		<div id="tab2">
+			<div class="grafik" id="grafik2"></div>
+		</div>
+		<script type="text/javascript">
+			var data = google.visualization.arrayToDataTable([['2003',  10],['2004',  20],['2005',  30],['2006',  40],['2007',  40],['2008',  60],['2009',  70],	['2010',  80],['2011',  70],['2012',  80],['2013',  100],['2014',  110],['2015',  120],['2016',  130],['2017',  140]]);
+			var chart = new google.visualization.AreaChart(document.getElementById('grafik'));
+			 chart.draw(data, options);
+			 
+			// additional charts
+			var data2 = google.visualization.arrayToDataTable([['2003',  10],['2004',  20],['2007',  40],['2008',  60],['2009',  70],	['2010',  80],['2011',  70],['2012',  80],['2013',  100],['2014',  110],['2015',  120],['2016',  130],['2017',  140]]);
+			var chart2 = new google.visualization.AreaChart(document.getElementById('grafik2'));
+			chart2.draw(data2, options);
+		</script>
+	</div>
+	<div class="popup grafik-pop" id="popup3">
+		<a href="#" class="close"></a>
+		<span class="h2">Иванов Иван Иванович</span>
+		<ul class="tabset">
+			<li class="active"><a href="#tab3">Частота просмотров</a></li><li>
+			<a href="#tab4">География</a></li>
+		</ul>
+		<div id="tab3">
+			<div class="grafik" id="grafik3"></div>
+		</div>
+		<div id="tab4">
+			<div class="grafik" id="grafik4"></div>
+		</div>
+		<script type="text/javascript">
+			var data = google.visualization.arrayToDataTable([['2003',  10],['2004',  20],['2005',  30],['2006',  40],['2007',  40],['2008',  60],['2009',  70],	['2010',  80],['2011',  70],['2012',  80],['2013',  100],['2014',  110],['2015',  120],['2016',  130],['2017',  140]]);
+			var chart = new google.visualization.AreaChart(document.getElementById('grafik3'));
+			 chart.draw(data, options);
+			 
+			// additional charts
+			var data2 = google.visualization.arrayToDataTable([['2003',  10],['2004',  20],['2007',  40],['2008',  60],['2009',  70],	['2010',  80],['2011',  70],['2012',  80],['2013',  100],['2014',  110],['2015',  120],['2016',  130],['2017',  140]]);
+			var chart2 = new google.visualization.AreaChart(document.getElementById('grafik4'));
+			chart2.draw(data2, options);
+		</script>
+	</div>
+</body>
+</html>

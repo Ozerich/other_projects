@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<title>inner4</title>
+	<link rel="stylesheet" type="text/css" href="css/all.css" />
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="js/html5shiv.js"></script>
+	<script type="text/javascript" src="js/jquery.simpleLightbox.js"></script>
+	<script type="text/javascript" src="js/jquery.form.js"></script>
+	<script type="text/javascript" src="js/jquery.main.js"></script>
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+	<script type="text/javascript">
+		google.load("visualization", "1", {packages:["corechart"]});
+		var options = {
+			colors: ['#eead65'],
+			fontSize: 11,
+			legend:{position:'none'},
+			chartArea:{left:26,top:21,width:650,height:428},
+			vAxis: {
+				gridlines: {count:6}
+			}
+		};
+	</script>
+</head>
+<body>
+	<div class="header-bg">
+		<header>
+			<a href="#" class="logo"></a>
+			<a href="#" class="button"><img src="images/button-img.gif" alt="">Пополнить</a>
+			<span class="balans">Баланс <span>100$</span></span>
+		</header>
+	</div>
+	<div class="holder">
+		<menu>
+			<li><a href="#">Компании</a><span class="shadow"></span></li>
+			<li><a href="#">Все объявления</a><span class="shadow"></span></li>
+			<li><a href="#">Платежи и документы</a><span class="shadow"></span></li>
+			<li class="active"><a href="#">Статистика</a><span class="shadow"></span></li>
+		</menu>
+		<section>
+			<table>
+				<tbody>
+					<tr>
+						<th>Объявление №</th>
+						<th>Название</th>
+						<th>Кол-во уникальных просмотров</th>
+						<th>Кол-во просмотров</th>
+						<th>Дата наибольшего числа просмотров</th>
+					</tr>
+					<tr>
+						<td><span>D30520</span></td>
+						<td><a class="name" href="#popup2">ООО "Название"</a></td>
+						<td>234</td>
+						<td>34567</td>
+						<td>21.12.2012</td>
+					</tr>
+					<tr>
+						<td><span>D30521</span></td>
+						<td><a class="name" href="#popup3">Иванов Иван Иванович</a></td>
+						<td>24</td>
+						<td>25</td>
+						<td>21.12.2012</td>
+					</tr>
+					<tr>
+						<td><span>D30520</span></td>
+						<td><a class="name" href="#popup2">ООО "Название"</a></td>
+						<td>234</td>
+						<td>34567</td>
+						<td>21.12.2012</td>
+					</tr>
+					<tr>
+						<td><span>D30521</span></td>
+						<td><a class="name" href="#popup2">Иванов Иван Иванович</a></td>
+						<td>24</td>
+						<td>25</td>
+						<td>21.12.2012</td>
+					</tr>
+					<tr>
+						<td><span>D30520</span></td>
+						<td><a class="name" href="#popup2">ООО "Название"</a></td>
+						<td>234</td>
+						<td>34567</td>
+						<td>21.12.2012</td>
+					</tr>
+					<tr>
+						<td><span>D30521</span></td>
+						<td><a class="name" href="#popup2">Иванов Иван Иванович</a></td>
+						<td>24</td>
+						<td>25</td>
+						<td>21.12.2012</td>
+					</tr>
+					<tr>
+						<td><span>D30520</span></td>
+						<td><a class="name" href="#popup2">ООО "Название"</a></td>
+						<td>234</td>
+						<td>34567</td>
+						<td>21.12.2012</td>
+					</tr>
+					<tr>
+						<td><span>D30521</span></td>
+						<td><a class="name" href="#popup2">Иванов Иван Иванович</a></td>
+						<td>24</td>
+						<td>25</td>
+						<td>21.12.2012</td>
+					</tr>
+					<tr>
+						<td><span>D30520</span></td>
+						<td><a class="name" href="#popup2">ООО "Название"</a></td>
+						<td>234</td>
+						<td>34567</td>
+						<td>21.12.2012</td>
+					</tr>
+					<tr>
+						<td><span>D30521</span></td>
+						<td><a class="name" href="#popup2">Иванов Иван Иванович</a></td>
+						<td>24</td>
+						<td>25</td>
+						<td>21.12.2012</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="pager-box">
+				<p><span>Показано</span> 10 компаний из 145</p>
+				<a href="#" class="next"></a>
+				<ul class="pager">
+					<li><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+					<li class="active">6</li>
+					<li><a href="#">7</a></li>
+					<li><a href="#">8</a></li>
+					<li><a href="#">9</a></li>
+					<li><a href="#">10</a></li>
+					<li>...</li>
+					<li><a href="#">20</a></li>
+				</ul>
+				<a href="#" class="prev"></a>
+			</div>
+		</section>
+	</div>
+	<div class="popup grafik-pop" id="popup2">
+		<a href="#" class="close"></a>
+		<span class="h2">ООО "Название"</span>
+		<ul class="tabset">
+			<li class="active"><a href="#tab1">Частота просмотров</a></li><li>
+			<a href="#tab2">География</a></li>
+		</ul>
+		<div id="tab1">
+			<div class="grafik" id="grafik"></div>
+		</div>
+		<div id="tab2">
+			<div class="grafik" id="grafik2"></div>
+		</div>
+		<script type="text/javascript">
+			var data = google.visualization.arrayToDataTable([['2003',  10],['2004',  20],['2005',  30],['2006',  40],['2007',  40],['2008',  60],['2009',  70],	['2010',  80],['2011',  70],['2012',  80],['2013',  100],['2014',  110],['2015',  120],['2016',  130],['2017',  140]]);
+			var chart = new google.visualization.AreaChart(document.getElementById('grafik'));
+			 chart.draw(data, options);
+			 
+			// additional charts
+			var data2 = google.visualization.arrayToDataTable([['2003',  10],['2004',  20],['2007',  40],['2008',  60],['2009',  70],	['2010',  80],['2011',  70],['2012',  80],['2013',  100],['2014',  110],['2015',  120],['2016',  130],['2017',  140]]);
+			var chart2 = new google.visualization.AreaChart(document.getElementById('grafik2'));
+			chart2.draw(data2, options);
+		</script>
+	</div>
+	<div class="popup grafik-pop" id="popup3">
+		<a href="#" class="close"></a>
+		<span class="h2">Иванов Иван Иванович</span>
+		<ul class="tabset">
+			<li class="active"><a href="#tab3">Частота просмотров</a></li><li>
+			<a href="#tab4">География</a></li>
+		</ul>
+		<div id="tab3">
+			<div class="grafik" id="grafik3"></div>
+		</div>
+		<div id="tab4">
+			<div class="grafik" id="grafik4"></div>
+		</div>
+		<script type="text/javascript">
+			var data = google.visualization.arrayToDataTable([['2003',  10],['2004',  20],['2005',  30],['2006',  40],['2007',  40],['2008',  60],['2009',  70],	['2010',  80],['2011',  70],['2012',  80],['2013',  100],['2014',  110],['2015',  120],['2016',  130],['2017',  140]]);
+			var chart = new google.visualization.AreaChart(document.getElementById('grafik3'));
+			 chart.draw(data, options);
+			 
+			// additional charts
+			var data2 = google.visualization.arrayToDataTable([['2003',  10],['2004',  20],['2007',  40],['2008',  60],['2009',  70],	['2010',  80],['2011',  70],['2012',  80],['2013',  100],['2014',  110],['2015',  120],['2016',  130],['2017',  140]]);
+			var chart2 = new google.visualization.AreaChart(document.getElementById('grafik4'));
+			chart2.draw(data2, options);
+		</script>
+	</div>
+</body>
+</html>

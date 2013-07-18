@@ -1,0 +1,1003 @@
+﻿body {
+    margin: 0px;
+}
+
+div {
+    background-repeat: no-repeat;
+}
+
+.raw_image {
+    width: 100%;
+    height: 100%;
+}
+
+.preload {
+    display: none;
+}
+#main_container {
+}
+
+.form_sketch {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.u0_normal {
+    background-image: url('../Статистика_files/u0_normal.png');
+}
+
+.u0_container {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1001px;
+    height:798px;
+}
+
+#u0_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:1007px;
+    height:804px;
+}
+
+.u1 {
+    position:absolute;
+    left:2px;
+    top:391px;
+    width:997px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u2_normal {
+    background-image: url('../Статистика_files/u2_normal.png');
+}
+
+.u2_container {
+    position:absolute;
+    left:10px;
+    top:10px;
+    width:200px;
+    height:100px;
+}
+
+#u2_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:206px;
+    height:106px;
+}
+
+.u3 {
+    position:absolute;
+    left:2px;
+    top:42px;
+    width:196px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u4_normal {
+    background-image: url('../Статистика_files/u4_normal.png');
+}
+
+.u4_container {
+    position:absolute;
+    left:10px;
+    top:215px;
+    width:764px;
+    height:562px;
+}
+
+#u4_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:770px;
+    height:568px;
+}
+
+.u5 {
+    position:absolute;
+    left:2px;
+    top:273px;
+    width:760px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u6_normal {
+    background-image: url('../Статистика_files/u6_normal.png');
+}
+
+.u6_container {
+    position:absolute;
+    left:177px;
+    top:161px;
+    width:147px;
+    height:32px;
+}
+
+#u6_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:153px;
+    height:38px;
+}
+
+.u7 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:143px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u8_line {
+    background-image: url('../Статистика_files/u8_line.png');
+}
+
+.u8_line {
+    position:absolute;
+    left:0px;
+    top:4px;
+    width:962px;
+    height:3px;
+}
+
+.u8 {
+    position:absolute;
+    left:10px;
+    top:188px;
+    width:962px;
+    height:10px;
+    
+}
+
+.u9_normal {
+    background-image: url('../Статистика_files/u9_normal.png');
+}
+
+.u9_container {
+    position:absolute;
+    left:20px;
+    top:161px;
+    width:147px;
+    height:32px;
+}
+
+#u9_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:153px;
+    height:38px;
+}
+
+.u10 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:143px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u11_normal {
+    background-image: url('../Статистика_files/u11_normal.png');
+}
+
+.u11_container {
+    position:absolute;
+    left:828px;
+    top:30px;
+    width:144px;
+    height:80px;
+}
+
+#u11_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:150px;
+    height:86px;
+}
+
+.u12 {
+    position:absolute;
+    left:2px;
+    top:32px;
+    width:140px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u13 {
+    position:absolute;
+    left:835px;
+    top:44px;
+    width:130px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u14 {
+    position:absolute;
+    left:835px;
+    top:76px;
+    width:100px;
+    height:25px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u15_normal {
+    background-image: url('../Статистика_files/u15_normal.png');
+}
+
+.u15_container {
+    position:absolute;
+    left:334px;
+    top:161px;
+    width:258px;
+    height:32px;
+}
+
+#u15_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:264px;
+    height:38px;
+}
+
+.u16 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:254px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+#u17 {
+    position:absolute;
+    left:10px;
+    top:249px;
+    width:641px;
+    height:134px
+}
+
+.u18_normal {
+    background-image: url('../Статистика_files/u18_normal.png');
+}
+
+.u18_container {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:107px;
+    height:36px;
+}
+
+#u18_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:113px;
+    height:42px;
+}
+
+.u19 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:103px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u20_normal {
+    background-image: url('../Статистика_files/u20_normal.png');
+}
+
+.u20_container {
+    position:absolute;
+    left:107px;
+    top:0px;
+    width:144px;
+    height:36px;
+}
+
+#u20_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:150px;
+    height:42px;
+}
+
+.u21 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:140px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u22_normal {
+    background-image: url('../Статистика_files/u22_normal.png');
+}
+
+.u22_container {
+    position:absolute;
+    left:251px;
+    top:0px;
+    width:139px;
+    height:36px;
+}
+
+#u22_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:145px;
+    height:42px;
+}
+
+.u23 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:135px;
+    height:32px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u24_normal {
+    background-image: url('../Статистика_files/u24_normal.png');
+}
+
+.u24_container {
+    position:absolute;
+    left:390px;
+    top:0px;
+    width:122px;
+    height:36px;
+}
+
+#u24_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:128px;
+    height:42px;
+}
+
+.u25 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:118px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u26_normal {
+    background-image: url('../Статистика_files/u26_normal.png');
+}
+
+.u26_container {
+    position:absolute;
+    left:512px;
+    top:0px;
+    width:124px;
+    height:36px;
+}
+
+#u26_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:130px;
+    height:42px;
+}
+
+.u27 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:120px;
+    height:32px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u28_normal {
+    background-image: url('../Статистика_files/u28_normal.png');
+}
+
+.u28_container {
+    position:absolute;
+    left:0px;
+    top:36px;
+    width:107px;
+    height:21px;
+}
+
+#u28_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:113px;
+    height:27px;
+}
+
+.u29 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:103px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u30_normal {
+    background-image: url('../Статистика_files/u30_normal.png');
+}
+
+.u30_container {
+    position:absolute;
+    left:107px;
+    top:36px;
+    width:144px;
+    height:21px;
+}
+
+#u30_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:150px;
+    height:27px;
+}
+
+.u31 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:140px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u32_normal {
+    background-image: url('../Статистика_files/u32_normal.png');
+}
+
+.u32_container {
+    position:absolute;
+    left:251px;
+    top:36px;
+    width:139px;
+    height:21px;
+}
+
+#u32_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:145px;
+    height:27px;
+}
+
+.u33 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:135px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u34_normal {
+    background-image: url('../Статистика_files/u34_normal.png');
+}
+
+.u34_container {
+    position:absolute;
+    left:390px;
+    top:36px;
+    width:122px;
+    height:21px;
+}
+
+#u34_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:128px;
+    height:27px;
+}
+
+.u35 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:118px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u36_normal {
+    background-image: url('../Статистика_files/u36_normal.png');
+}
+
+.u36_container {
+    position:absolute;
+    left:512px;
+    top:36px;
+    width:124px;
+    height:21px;
+}
+
+#u36_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:130px;
+    height:27px;
+}
+
+.u37 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:120px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u38_normal {
+    background-image: url('../Статистика_files/u38_normal.png');
+}
+
+.u38_container {
+    position:absolute;
+    left:0px;
+    top:57px;
+    width:107px;
+    height:36px;
+}
+
+#u38_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:113px;
+    height:42px;
+}
+
+.u39 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:103px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u40_normal {
+    background-image: url('../Статистика_files/u40_normal.png');
+}
+
+.u40_container {
+    position:absolute;
+    left:107px;
+    top:57px;
+    width:144px;
+    height:36px;
+}
+
+#u40_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:150px;
+    height:42px;
+}
+
+.u41 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:140px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u42_normal {
+    background-image: url('../Статистика_files/u42_normal.png');
+}
+
+.u42_container {
+    position:absolute;
+    left:251px;
+    top:57px;
+    width:139px;
+    height:36px;
+}
+
+#u42_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:145px;
+    height:42px;
+}
+
+.u43 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:135px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u44_normal {
+    background-image: url('../Статистика_files/u44_normal.png');
+}
+
+.u44_container {
+    position:absolute;
+    left:390px;
+    top:57px;
+    width:122px;
+    height:36px;
+}
+
+#u44_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:128px;
+    height:42px;
+}
+
+.u45 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:118px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u46_normal {
+    background-image: url('../Статистика_files/u46_normal.png');
+}
+
+.u46_container {
+    position:absolute;
+    left:512px;
+    top:57px;
+    width:124px;
+    height:36px;
+}
+
+#u46_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:130px;
+    height:42px;
+}
+
+.u47 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:120px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u48_normal {
+    background-image: url('../Статистика_files/u38_normal.png');
+}
+
+.u48_container {
+    position:absolute;
+    left:0px;
+    top:93px;
+    width:107px;
+    height:36px;
+}
+
+#u48_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:113px;
+    height:42px;
+}
+
+.u49 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:103px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u50_normal {
+    background-image: url('../Статистика_files/u40_normal.png');
+}
+
+.u50_container {
+    position:absolute;
+    left:107px;
+    top:93px;
+    width:144px;
+    height:36px;
+}
+
+#u50_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:150px;
+    height:42px;
+}
+
+.u51 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:140px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u52_normal {
+    background-image: url('../Статистика_files/u42_normal.png');
+}
+
+.u52_container {
+    position:absolute;
+    left:251px;
+    top:93px;
+    width:139px;
+    height:36px;
+}
+
+#u52_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:145px;
+    height:42px;
+}
+
+.u53 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:135px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u54_normal {
+    background-image: url('../Статистика_files/u44_normal.png');
+}
+
+.u54_container {
+    position:absolute;
+    left:390px;
+    top:93px;
+    width:122px;
+    height:36px;
+}
+
+#u54_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:128px;
+    height:42px;
+}
+
+.u55 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:118px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u56_normal {
+    background-image: url('../Статистика_files/u46_normal.png');
+}
+
+.u56_container {
+    position:absolute;
+    left:512px;
+    top:93px;
+    width:124px;
+    height:36px;
+}
+
+#u56_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:130px;
+    height:42px;
+}
+
+.u57 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:120px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+

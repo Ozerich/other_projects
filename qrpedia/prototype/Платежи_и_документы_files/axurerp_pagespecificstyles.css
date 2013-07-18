@@ -1,0 +1,821 @@
+﻿body {
+    margin: 0px;
+}
+
+div {
+    background-repeat: no-repeat;
+}
+
+.raw_image {
+    width: 100%;
+    height: 100%;
+}
+
+.preload {
+    display: none;
+}
+#main_container {
+}
+
+.form_sketch {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.u0_normal {
+    background-image: url('../Платежи_и_документы_files/u0_normal.png');
+}
+
+.u0_container {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1001px;
+    height:798px;
+}
+
+#u0_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:1007px;
+    height:804px;
+}
+
+.u1 {
+    position:absolute;
+    left:2px;
+    top:391px;
+    width:997px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u2_normal {
+    background-image: url('../Платежи_и_документы_files/u2_normal.png');
+}
+
+.u2_container {
+    position:absolute;
+    left:10px;
+    top:10px;
+    width:200px;
+    height:100px;
+}
+
+#u2_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:206px;
+    height:106px;
+}
+
+.u3 {
+    position:absolute;
+    left:2px;
+    top:42px;
+    width:196px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u4_normal {
+    background-image: url('../Платежи_и_документы_files/u4_normal.png');
+}
+
+.u4_container {
+    position:absolute;
+    left:20px;
+    top:161px;
+    width:147px;
+    height:31px;
+}
+
+#u4_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:153px;
+    height:37px;
+}
+
+.u5 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:143px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u6_normal {
+    background-image: url('../Платежи_и_документы_files/u6_normal.png');
+}
+
+.u6_container {
+    position:absolute;
+    left:177px;
+    top:161px;
+    width:147px;
+    height:32px;
+}
+
+#u6_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:153px;
+    height:38px;
+}
+
+.u7 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:143px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u8_normal {
+    background-image: url('../Платежи_и_документы_files/u6_normal.png');
+}
+
+.u8_container {
+    position:absolute;
+    left:602px;
+    top:161px;
+    width:147px;
+    height:32px;
+}
+
+#u8_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:153px;
+    height:38px;
+}
+
+.u9 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:143px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u10 {
+    position:absolute;
+    left:20px;
+    top:208px;
+    width:147px;
+    height:25px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u11_line {
+    background-image: url('../Платежи_и_документы_files/u11_line.png');
+}
+
+.u11_line {
+    position:absolute;
+    left:0px;
+    top:4px;
+    width:962px;
+    height:3px;
+}
+
+.u11 {
+    position:absolute;
+    left:10px;
+    top:188px;
+    width:962px;
+    height:10px;
+    
+}
+
+#u12 {
+    position:absolute;
+    left:12px;
+    top:249px;
+    width:964px;
+    height:98px
+}
+
+.u13_normal {
+    background-image: url('../Платежи_и_документы_files/u13_normal.png');
+}
+
+.u13_container {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:188px;
+    height:21px;
+}
+
+#u13_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:194px;
+    height:27px;
+}
+
+.u14 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:184px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u15_normal {
+    background-image: url('../Платежи_и_документы_files/u15_normal.png');
+}
+
+.u15_container {
+    position:absolute;
+    left:188px;
+    top:0px;
+    width:185px;
+    height:21px;
+}
+
+#u15_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:191px;
+    height:27px;
+}
+
+.u16 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:181px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u17_normal {
+    background-image: url('../Платежи_и_документы_files/u17_normal.png');
+}
+
+.u17_container {
+    position:absolute;
+    left:373px;
+    top:0px;
+    width:175px;
+    height:21px;
+}
+
+#u17_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:181px;
+    height:27px;
+}
+
+.u18 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:171px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u19_normal {
+    background-image: url('../Платежи_и_документы_files/u19_normal.png');
+}
+
+.u19_container {
+    position:absolute;
+    left:548px;
+    top:0px;
+    width:194px;
+    height:21px;
+}
+
+#u19_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:200px;
+    height:27px;
+}
+
+.u20 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:190px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u21_normal {
+    background-image: url('../Платежи_и_документы_files/u21_normal.png');
+}
+
+.u21_container {
+    position:absolute;
+    left:742px;
+    top:0px;
+    width:217px;
+    height:21px;
+}
+
+#u21_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:223px;
+    height:27px;
+}
+
+.u22 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:213px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u23_normal {
+    background-image: url('../Платежи_и_документы_files/u23_normal.png');
+}
+
+.u23_container {
+    position:absolute;
+    left:0px;
+    top:21px;
+    width:188px;
+    height:36px;
+}
+
+#u23_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:194px;
+    height:42px;
+}
+
+.u24 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:184px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u25_normal {
+    background-image: url('../Платежи_и_документы_files/u25_normal.png');
+}
+
+.u25_container {
+    position:absolute;
+    left:188px;
+    top:21px;
+    width:185px;
+    height:36px;
+}
+
+#u25_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:191px;
+    height:42px;
+}
+
+.u26 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:181px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u27_normal {
+    background-image: url('../Платежи_и_документы_files/u27_normal.png');
+}
+
+.u27_container {
+    position:absolute;
+    left:373px;
+    top:21px;
+    width:175px;
+    height:36px;
+}
+
+#u27_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:181px;
+    height:42px;
+}
+
+.u28 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:171px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u29_normal {
+    background-image: url('../Платежи_и_документы_files/u29_normal.png');
+}
+
+.u29_container {
+    position:absolute;
+    left:548px;
+    top:21px;
+    width:194px;
+    height:36px;
+}
+
+#u29_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:200px;
+    height:42px;
+}
+
+.u30 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:190px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u31_normal {
+    background-image: url('../Платежи_и_документы_files/u31_normal.png');
+}
+
+.u31_container {
+    position:absolute;
+    left:742px;
+    top:21px;
+    width:217px;
+    height:36px;
+}
+
+#u31_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:223px;
+    height:42px;
+}
+
+.u32 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:213px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u33_normal {
+    background-image: url('../Платежи_и_документы_files/u33_normal.png');
+}
+
+.u33_container {
+    position:absolute;
+    left:0px;
+    top:57px;
+    width:188px;
+    height:36px;
+}
+
+#u33_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:194px;
+    height:42px;
+}
+
+.u34 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:184px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u35_normal {
+    background-image: url('../Платежи_и_документы_files/u35_normal.png');
+}
+
+.u35_container {
+    position:absolute;
+    left:188px;
+    top:57px;
+    width:185px;
+    height:36px;
+}
+
+#u35_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:191px;
+    height:42px;
+}
+
+.u36 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:181px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u37_normal {
+    background-image: url('../Платежи_и_документы_files/u37_normal.png');
+}
+
+.u37_container {
+    position:absolute;
+    left:373px;
+    top:57px;
+    width:175px;
+    height:36px;
+}
+
+#u37_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:181px;
+    height:42px;
+}
+
+.u38 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:171px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u39_normal {
+    background-image: url('../Платежи_и_документы_files/u39_normal.png');
+}
+
+.u39_container {
+    position:absolute;
+    left:548px;
+    top:57px;
+    width:194px;
+    height:36px;
+}
+
+#u39_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:200px;
+    height:42px;
+}
+
+.u40 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:190px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u41_normal {
+    background-image: url('../Платежи_и_документы_files/u41_normal.png');
+}
+
+.u41_container {
+    position:absolute;
+    left:742px;
+    top:57px;
+    width:217px;
+    height:36px;
+}
+
+#u41_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:223px;
+    height:42px;
+}
+
+.u42 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:213px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u43 {
+    position:absolute;
+    left:865px;
+    top:274px;
+    width:100px;
+    height:25px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u44 {
+    position:absolute;
+    left:865px;
+    top:309px;
+    width:100px;
+    height:25px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u45_normal {
+    background-image: url('../Платежи_и_документы_files/u45_normal.png');
+}
+
+.u45_container {
+    position:absolute;
+    left:334px;
+    top:148px;
+    width:258px;
+    height:45px;
+}
+
+#u45_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:264px;
+    height:51px;
+}
+
+.u46 {
+    position:absolute;
+    left:2px;
+    top:14px;
+    width:254px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+

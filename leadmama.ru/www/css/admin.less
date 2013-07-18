@@ -1,0 +1,88 @@
+body.admin {
+
+  .page {
+    width: 800px;
+    margin: 20px auto;
+    background: none;
+  }
+
+  .admin-menu{
+		
+	text-align: center;
+	margin: 10px 0;
+	
+    li{
+      display: inline-block;
+	  font-size: 12px;
+	  margin: 0 5px;
+    }
+
+  }
+
+  .admin-list{
+    width: 100%;
+    border-collapse: collapse;
+
+
+    td, th{
+      padding: 5px 10px;
+      border-bottom: 1px solid;
+      text-align: left;
+    }
+
+    td, th{
+      &.column-actions{
+
+        width: 100px;
+        text-align: right;
+
+        .btn{
+          display: inline-block;
+          width: 16px;
+          height: 16px;
+
+          &.edit-btn{
+            background: url('../images/admin/update.png');
+          }
+
+          &.delete-btn{
+            background: url('../images/admin/delete.png');
+          }
+		  
+		  &.diary-btn{
+            background: url('../images/admin/diary.png');
+          }
+
+          &.view-btn{
+            background: url('../images/admin/view.png');
+          }
+        }
+      }
+    }
+  }
+}
+
+.admin-form{
+
+	.errorMessage{
+		font-size: 12px;
+		color: red;
+	}
+	
+	.row{
+		margin: 10px 0;
+		clear: both;
+	}
+	
+	label{
+		display: block;
+		margin-bottom: 3px;
+		font-size: 12px;
+	}
+	
+	input[type=text]{
+		width: 250px;
+	}
+	
+}	
+
